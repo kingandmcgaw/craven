@@ -11,7 +11,7 @@ body {
 p,
 ul,
 ol {
-  margin: 0 0 1.5em;
+  margin: 0 0 0.75em;
 }
 
 ul {
@@ -111,7 +111,7 @@ img {
 .lead {
   font-size: 1.25em;
   line-height: 1.25;
-  margin-bottom: 1.2em;
+  margin-bottom: 0.6em;
 }
 
 .muted {
@@ -178,57 +178,58 @@ h6 {
 h1 {
   font-size: 3em;
   line-height: 1;
-  margin: 0 0 0.5em;
+  margin: 0 0 0.25em;
 
   &.subheading {
     font-size: 2em;
-    line-height: 1.5;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.375em;
   }
 }
 
 h2 {
   font-size: 2em;
-  margin: 0 0 0.75em;
+  line-height: 1.3;
+  margin: 0 0 0.375em;
 
   &.subheading {
     font-size: 1.5em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
 }
 
 h3 {
   font-size: 1.5em;
-  margin: 0 0 1em;
+  line-height: 1;
+  margin: 0 0 0.5em;
 
   &.subheading {
     font-size: 1.25em;
     line-height: 1.25;
-    margin-bottom: 1.2em;
+    margin-bottom: 0.6em;
   }
 }
 
 h4 {
   font-size: 1.25em;
   line-height: 1.25;
-  margin: 0 0 1.2em;
+  margin: 0 0 0.6em;
 
   &.subheading {
     font-size: 1em;
     line-height: 1.5;
-    margin-bottom: 1.5em;
+    margin-bottom: 0.75em;
   }
 }
 
 h5,
 h6 {
   font-size: 1em;
-  margin: 0 0 1.5em;
+  margin: 0 0 0.75em;
 
   &.subheading {
     font-size: 0.9em;
     line-height: 1.6;
-    margin-bottom: 1.6em;
+    margin-bottom: 0.8em;
   }
 }
 
