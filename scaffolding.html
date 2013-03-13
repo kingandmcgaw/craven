@@ -1,9 +1,9 @@
 <!doctype html>
 <!--[if lt IE 9]><html lang="en-gb" dir="ltr" class="ie"><![endif]-->
-<!--[if gte IE 9]><!--><html lang="en-bg" dir="ltr"><!--<![endif]-->
+<!--[if gte IE 9]><!--><html lang="en-gb" dir="ltr"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Van Sant - The Easyart styleguide and pattern library</title>
+  <title>Scaffolding - Van Sant</title>
   <meta name="description" content="The front-end framework for Easyart, WorldGallery and King &amp; McGaw">
   <meta name="author" content="Easyart">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +18,9 @@
     <div class="grid-container">
       <div class="grid-100">
         <ul class="nav">
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="getting-started.html">Getting started</a></li>
-          <li><a href="scaffolding.html">Scaffolding</a></li>
+          <li class="active"><a href="scaffolding.html">Scaffolding</a></li>
         </ul>
       </div>
     </div>
@@ -29,15 +29,31 @@
   <div class="grid-container">
 
     <div class="grid-100">
-      <div class="page-header">
-        <h1>Van Sant</h1>
-        <p class="lead">The front-end framework for Easyart, WorldGallery and King &amp; McGaw</p>
-        <p><a href="https://github.com/easyart/van-sant/archive/master.zip" class="btn btn-primary btn-large">Download</a></p>
+      <div class="section">
+        <h1>Scaffolding</h1>
+        <p class="lead muted">An overview of the configuration and grid system.</p>
+        <hr>
       </div>
-      <hr>
     </div>
 
-
+    <div class="main-content">
+      <div class="grid-25 push-75">
+        <ul class="list-block">
+          <li><a href="#global-styles">Global styles</a></li>
+          <li><a href="#grid-system">Grid system</a></li>
+        </ul>
+      </div>
+      <div class="grid-75 pull-25">
+        <div id="global-styles">
+          <h2>Global styles</h2>
+          <p>All default styles are set in <code>reset.scss</code> and <code>typography.scss</code>. These styles are configurable by adjusting the values in <code>variables.scss</code>.</p>
+        </div>
+        <div id="grid-system">
+          <h2>Grid system</h2>
+          <p>Easystrap is based on the <a href="http://unsemantic.com/">Unsemantic</a> grid system. For full documentation <a href="http://unsemantic.com/css-documentation">go here&hellip;</a></p>
+        </div>
+      </div>
+    </div>
 
     <div class="grid-100">
       <div class="footer muted text-center">
