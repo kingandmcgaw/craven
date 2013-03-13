@@ -1,49 +1,66 @@
+form {
+  margin-bottom: 1.5em;
+}
+
 fieldset {
   padding: 0;
   border: 0;
 }
 
 legend {
-  font-weight: bold;
-  margin-bottom: 1.5em;
-}
-
-.form-controls {
-  margin-bottom: 1.5em;
-  @extend .clearfix;
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  border-bottom: 1px solid $keyline;
+  font-size: 1.5em;
 }
 
 label {
   display: block;
+  margin-bottom: 0.25em;
 }
 
 input,
 textarea {
+  @include inline-block;
+  margin-bottom: 0.75em;
   padding: 0.25em 5px;
   border: 1px solid $keyline;
   font: inherit;
+  line-height: 1.5;
+  vertical-align: middle;
+  @include border-radius(3px);
   @include box-shadow(inset 2px 2px 6px rgba(0,0,0,0.1));
+  @include box-sizing(border-box);
 }
 
-input {
-  width: 60%;
+.help-block {
+  display: block;
+  margin-bottom: 0.75em;
 }
 
-textarea {
-  width: 75%;
-  height: 12em;
+.checkbox,
+.radio {
+  min-height: 1.5em;
+  padding-left: 20px;
+
+  [type="checkbox"],
+  [type="radio"] {
+    float: left;
+    margin: 4px 0 0 -20px;
+  }
 }
 
 input[type="submit"],
 button,
 .btn {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
+  @include inline-block;
   width: auto;
   padding: 0.5em 10px;
   border: 1px solid $button-border;
   color: $gray-darker;
+  vertical-align: middle;
+  @include box-sizing(border-box);
   @include border-radius(3px);
   @include button-background;
   @include box-shadow(inset 2px 2px 6px rgba(255,255,255,0.25));
@@ -142,4 +159,64 @@ button,
   [class*=" icon-"] {
     margin-top: 4px;
   }
+}
+
+// Form layouts
+.form-search {
+  margin: 0;
+
+  input {
+    margin: 0;
+  }
+}
+
+.form-inline {
+  margin: 0;
+
+  input {
+    margin: 0;
+  }
+
+  .checkbox,
+  .radio {
+    @include inline-block;
+    vertical-align: middle;
+  }
+}
+
+.form-horizontal {
+
+  .control-group {
+    margin-bottom: 0.5em;
+    @extend clearfix;
+
+    label {
+      float: left;
+      width: 160px;
+      padding-top: 5px;
+      text-align: right;
+
+      @media only screen and (max-width: 767px) {
+        float: none;
+        width: auto;
+        text-align: left;
+      }
+    }
+
+    .checkbox {
+      float: none;
+      width: auto;
+      text-align: left;
+    }
+  }
+
+  .controls {
+    margin-left: 180px;
+
+    @media only screen and (max-width: 767px) {
+      margin-left: 0;
+    }
+  }
+
+
 }

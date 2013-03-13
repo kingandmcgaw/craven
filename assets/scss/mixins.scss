@@ -30,6 +30,18 @@
           transition: $transition;
 }
 
+@mixin box-sizing($box-size) {
+     -moz-box-sizing: $box-size;
+  -webkit-box-sizing: $box-size;
+          box-sizing: $box-size;
+}
+
+@mixin inline-block {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
 @mixin button-background {
   background: $button-base-color;
   background: -webkit-gradient(linear, 0 100%, 0 0, from($button-highlight), to($button-base-color));

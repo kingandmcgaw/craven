@@ -39,14 +39,16 @@
 
     <div class="main-content">
       <div class="grid-25 push-75">
-        <ul class="list-block">
-          <li><a href="#typography">Typography</a></li>
-          <li><a href="#tables">Tables</a></li>
-          <li><a href="#forms">Forms</a></li>
-          <li><a href="#buttons">Buttons</a></li>
-          <li><a href="#images">Images</a></li>
-          <li><a href="#icons">Icons</a></li>
-        </ul>
+        <div class="well">
+          <ul class="list-block">
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#icons">Icons</a></li>
+          </ul>
+        </div>
       </div>
       <div class="grid-75 pull-25">
         <div id="typography">
@@ -265,31 +267,103 @@
         <hr>
         <div id="forms">
           <h2>Forms</h2>
-          <form action="#" method="get">
+          <p>The form styles have been based on those from <a href="http://getbootstrap.com">Bootstrap</a>.</p>
+          <h3>Default styles</h3>
+          <form>
             <fieldset>
-              <legend>This is a legend</legend>
-              <div class="form-controls">
-                <label for="">Text input</label>
-                <input type="text" placeholder="This is a text input">
-              </div>
-              <div class="form-controls">
-                <label for="">Email input</label>
-                <input type="email" placeholder="This is an email input">
-              </div>
-              <div class="form-controls">
-                <label for="">Search input</label>
-                <input type="search" placeholder="This is a search input">
-              </div>
-              <div class="form-controls">
-                <label for="">Password input</label>
-                <input type="password" placeholder="This is a password input">
-              </div>
-              <div class="form-controls">
-                <label for="">Textarea</label>
-                <textarea></textarea>
-              </div>
+              <legend>Legend</legend>
+              <label>Label name</label>
+              <input type="text" placeholder="Type something&hellip;">
+              <span class="help-block">Example block-level help text here.</span>
+              <label class="checkbox">
+                <input type="checkbox"> Check me out
+              </label>
+              <button type="submit">Submit</button>
             </fieldset>
           </form>
+          <pre><code>&lt;form>
+&lt;fieldset>
+  &lt;legend>Legend&lt;/legend>
+  &lt;label>Label name&lt;/label>
+  &lt;input type="text" placeholder="Type something&hellip;">
+  &lt;span class="help-block">Example block-level help text here.&lt;/span>
+  &lt;label class="checkbox">
+    &lt;input type="checkbox"> Check me out
+  &lt;/label>
+  &lt;button type="submit">Submit&lt;/button>
+&lt;/fieldset>
+&lt;/form></code></pre>
+          <h3>Search form</h3>
+          <form class="form-search">
+            <input type="search" class="search-query">
+            <button type="submit">Search</button>
+          </form>
+          <pre><code>&lt;form class="form-search">
+  &lt;input type="search" class="search-query">
+  &lt;button type="submit">Search&lt;/button>
+&lt;/form></code></pre>
+          <h3>Inline form</h3>
+          <form class="form-inline">
+            <input type="email" placeholder="Email address">
+            <input type="password" placeholder="Password">
+            <label class="checkbox">
+              <input type="checkbox"> Remember me
+            </label>
+            <button type="submit">Sign in</button>
+          </form>
+          <pre><code>&lt;form class="form-inline">
+  &lt;input type="email" placeholder="Email address">
+  &lt;input type="password" placeholder="Password">
+  &lt;label class="checkbox">
+    &lt;input type="checkbox"> Remember me
+  &lt;/label>
+  &lt;button type="submit">Sign in&lt;/button>
+&lt;/form></code></pre>
+          <h3>Horizontal form</h3>
+          <form class="form-horizontal">
+            <div class="control-group">
+              <label>Email</label>
+              <div class="controls">
+                <input type="email" placeholder="Email address">
+              </div>
+            </div>
+            <div class="control-group">
+              <label>Password</label>
+              <div class="controls">
+                <input type="password" placeholder="password">
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>
+                <button type="submit">Sign in</button>
+              </div>
+            </div>
+          </form>
+          <pre><code>&lt;form class="form-horizontal">
+  &lt;div class="control-group">
+    &lt;label>Email&lt;/label>
+    &lt;div class="controls">
+      &lt;input type="email" placeholder="Email address">
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="control-group">
+    &lt;label>Password&lt;/label>
+    &lt;div class="controls">
+      &lt;input type="password" placeholder="password">
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="control-group">
+    &lt;div class="controls">
+      &lt;label class="checkbox">
+        &lt;input type="checkbox"> Remember me
+      &lt;/label>
+      &lt;button type="submit">Sign in&lt;/button>
+    &lt;/div>
+  &lt;/div>
+&lt;/form></code></pre>
         </div>
         <hr>
         <div id="buttons">
@@ -516,7 +590,7 @@
       <div class="footer muted text-center">
         <hr>
         <ul>
-          <li><a href="https://github.com/easyart/van-sant/">Github project</a> | <a href="https://github.com/easyart/van-sant/issues">Issues</a> | <a href="https://github.com/easyart.com/van-sant/CHANGELOG.md">Changelog</a> | <a href="http://easyart.github.com/">Developers blog</a></li>
+          <li><a href="https://github.com/easyart/van-sant/">Github project</a> | <a href="https://github.com/easyart/van-sant/issues">Issues</a> | <a href="https://github.com/easyart/van-sant/blob/master/CHANGELOG.md">Changelog</a> | <a href="http://easyart.github.com/">Developers blog</a></li>
           <li>&copy; Copyright 2013 <a href="http://www.easyart.com">Easyart</a>. All rights reserved.</li>
         </ul>
       </div>
