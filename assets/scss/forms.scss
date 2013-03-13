@@ -1,0 +1,133 @@
+fieldset {
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+.form-controls {
+  margin-bottom: 1.5em;
+  @extend .clearfix;
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  padding: 0.25em 5px;
+  border: 1px solid $keyline;
+  font: inherit;
+  @include box-shadow(inset 2px 2px 6px rgba(0,0,0,0.1));
+}
+
+input {
+  width: 60%;
+}
+
+textarea {
+  width: 75%;
+  height: 12em;
+}
+
+input[type="submit"],
+button,
+.btn {
+  width: auto;
+  padding: 0.5em 10px;
+  border: 1px solid $button-border;
+  color: $gray-darker;
+  @include border-radius(3px);
+  @include button-background;
+  @include box-shadow(inset 2px 2px 6px rgba(255,255,255,0.25));
+
+  &:hover {
+    background: $button-base-color;
+  }
+
+  &:active,
+  &:focus {
+    background: $button-base-color;
+    @include box-shadow(inset 0 0 6px rgba(0,0,0,0.25));
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  border-color: darken($button-primary-base-color, 10%);
+  @include button-primary-background;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+    background: $button-primary-base-color;
+  }
+}
+
+.btn-info {
+  color: #fff;
+  border-color: darken($button-info-base-color, 10%);
+  @include button-info-background;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+    background: $button-info-base-color;
+  }
+}
+
+.btn-success {
+  color: #fff;
+  border-color: darken($button-success-base-color, 10%);
+  @include button-success-background;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+    background: $button-success-base-color;
+  }
+}
+
+.btn-warning {
+  color: #fff;
+  border-color: darken($button-warning-base-color, 10%);
+  @include button-warning-background;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+    background: $button-warning-base-color;
+  }
+}
+
+.btn-danger {
+  color: #fff;
+  border-color: darken($button-danger-base-color, 10%);
+  @include button-danger-background;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+    background: $button-danger-base-color;
+  }
+}
+
+.btn-large {
+  font-size: 1.25em;
+  line-height: 1;
+  padding: 0.75em 30px;
+}

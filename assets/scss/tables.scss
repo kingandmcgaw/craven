@@ -1,0 +1,20 @@
+table {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+th {
+  text-align: left;
+  border-bottom: 2px solid $keyline;
+}
+
+tr {
+  border-bottom: 1px solid $keyline;
+}
+
+.table-striped {
+
+  tr:nth-child(even) {
+    background: $gray-lighter;
+  }
+}
