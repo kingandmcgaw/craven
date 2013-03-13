@@ -1,0 +1,487 @@
+<!doctype html>
+<!--[if lt IE 9]><html lang="en-gb" dir="ltr" class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><html lang="en-gb" dir="ltr"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Base CSS - Van Sant</title>
+  <meta name="description" content="The front-end framework for Easyart, WorldGallery and King &amp; McGaw">
+  <meta name="author" content="Easyart">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script type="text/javascript" src="//use.typekit.net/htt2icm.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="grid-container">
+      <div class="grid-100">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="getting-started.html">Getting started</a></li>
+          <li><a href="scaffolding.html">Scaffolding</a></li>
+          <li class="active"><a href="base-css.html">Base CSS</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-container">
+
+    <div class="grid-100">
+      <div class="section">
+        <h1>Base CSS</h1>
+        <p class="lead muted">An overview of typography, tables, forms and buttons.</p>
+        <hr>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="grid-25 push-75">
+        <ul class="list-block">
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#icons">Icons</a></li>
+        </ul>
+      </div>
+      <div class="grid-75 pull-25">
+        <div id="typography">
+          <h2>Typography</h2>
+          <p class="lead">The typography in this pattern library is built using ems, meaning the entire typographic scale can be altered by adjusting the <code>$base-font-size</code> variable.</p>
+          <h1>h1. This is a first-level heading</h1>
+          <h2>h2. This is a second-level heading</h2>
+          <h3>h3. This is a third-level heading</h3>
+          <h4>h4. This is a fourth-level heading</h4>
+          <h5>This is a fifth level-heading</h5>
+          <h6>This is a sixth level-heading</h6>
+          <h1 class="subheading">h1. This is a first-level sub-heading</h1>
+          <h2 class="subheading">h2. This is a second-level sub-heading</h2>
+          <h3 class="subheading">h3. This is a third-level sub-heading</h3>
+          <h4 class="subheading">h4. This is a fourth-level sub-heading</h4>
+          <h5 class="subheading">This is a fifth-level sub-heading</h5>
+          <h6 class="subheading">This is a sixth-level sub-heading</h6>
+          <h1>This is a first-level heading <small>with a small tag</small></h1>
+          <h2>This is a second-level heading <small>with a small tag</small></h2>
+          <h3>This is a third-level heading <small>with a small tag</small></h3>
+          <h4>This is a fourth-level heading <small>with a small tag</small></h4>
+          <h5>This is a fifth-level heading <small>with a small tag</small></h5>
+          <h6>This is a sixth-level heading <small>with a small tag</small></h6>
+          <h2>Links</h2>
+          <p>Links in this pattern library are <a href="#">fairly standard</a>. There are two variables which can be altered to change the colour of the links: <code>$link-color</code> and <code>$link-color-hover</code>.</p>
+          <h2>Lists</h2>
+          <p>By default unordered lists are unstyled. Discs, circles and squares can be applied by applying the appropriate classes:</p>
+          <h3>Unstyled list</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+          </ul>
+          <h3>ul.disc</h3>
+          <ul class="disc">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>
+              Lorem ipsum dolor sit amet
+              <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+              </ul>
+            </li>
+            <li>Lorem ipsum dolor sit amet</li>
+          </ul>
+          <h3>ul.circle</h3>
+          <ul class="circle">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>
+              Lorem ipsum dolor sit amet
+              <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+              </ul>
+            </li>
+            <li>Lorem ipsum dolor sit amet</li>
+          </ul>
+          <h3>ul.square</h3>
+          <ul class="square">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>
+              Lorem ipsum dolor sit amet
+              <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+              </ul>
+            </li>
+            <li>Lorem ipsum dolor sit amet</li>
+          </ul>
+          <h3>Mixing styles</h3>
+          <p>By default nested lists inherit the style of their parent, so no need to keep adding the class, however if you wish to use a diffent style for a nested list then just add that class:</p>
+          <ul class="square">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>
+              Lorem ipsum dolor sit amet
+              <ul class="circle">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+              </ul>
+            </li>
+            <li>Lorem ipsum dolor sit amet</li>
+          </ul>
+          <p>You can also use an unstyled nested list by adding a class of <code>.unstyled</code> to it:</p>
+          <ul class="disc">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>
+              Lorem ipsum dolor sit amet
+              <ul class="unstyled">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+              </ul>
+            </li>
+            <li>Lorem ipsum dolor sit amet</li>
+          </ul>
+          <h3>Ordered lists</h3>
+          <p>By default, ordered lists will display with numbers. It is unlikely that you would use an ordered list unless you wanted the numbers to be shown but in the case that you don't want this, you can use the <code>.unstyled</code> class:</p>
+          <ol>
+            <li>This is a default ordered list</li>
+            <li>There are no classes added to this element</li>
+          </ol>
+          <ol class="unstyled">
+            <li>This is an unstyled ordered list</li>
+            <li>This has the <code>.unstyled</code> class applied to it</li>
+          </ol>
+          <h2>Inline styles and utilities</h2>
+          <p>This is a paragraph to display how inline styles are displayed, such as <strong>strong tags</strong>, or maybe <em>em tags</em>.</p>
+          <p>There are some utility classes also, such as <span class="muted">using the muted class</span>, or various alignment elements.</p>
+          <p class="text-left">This text will be left-aligned because it has the <code>.text-left</code> class applied to its container, which could be a paragraph, list or div, for example.</p>
+          <p class="text-center">This text will be centered because it has the <code>.text-center</code> class applied to its container, which could also be a paragraph, list or div, for example.</p>
+          <p class="text-right">This text will be right-aligned because it has the <code>.text-right</code> class applied to its container, which yet again could also be a paragraph, list or div, for example.</p>
+          <ul>
+            <li class="text-warning">This is warning text, which has the <code>.text-warning</code> class applied.</li>
+            <li class="text-error">This is error text, which has the <code>.text-error</code> class applied.</li>
+            <li class="text-info">This is info text, which has the <code>.text-info</code> class applied.</li>
+            <li class="text-success">This is success text, which has the <code>.text-success</code> class applied.</li>
+          </ul>
+        </div>
+        <div id="tables">
+          <h2>Tables</h2>
+          <p>There are two basic table styles: a pure table with no classes necessary and a striped table, which requires the class <code>.table-striped</code> applied to the root element.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Table heading 1</th>
+                <th>Table heading 2</th>
+                <th>Table heading 3</th>
+                <th>Table heading 4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Some data</td>
+                <td>Some more data</td>
+                <td>Some even longer data</td>
+                <td>Some data that is longer that the previous data</td>
+              </tr>
+              <tr>
+                <td>Some data</td>
+                <td>Some more data</td>
+                <td>Some even longer data</td>
+                <td>Some data that is longer that the previous data</td>
+              </tr>
+              <tr>
+                <td>Some data</td>
+                <td>Some more data</td>
+                <td>Some even longer data</td>
+                <td>Some data that is longer that the previous data</td>
+              </tr>
+              <tr>
+                <td>Some data</td>
+                <td>Some more data</td>
+                <td>Some even longer data</td>
+                <td>Some data that is longer that the previous data</td>
+              </tr>
+              <tr>
+                <td>Some data</td>
+                <td>Some more data</td>
+                <td>Some even longer data</td>
+                <td>Some data that is longer that the previous data</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table-striped">
+            <thead>
+              <tr>
+                <th>Table heading 1</th>
+                <th>Table heading 2</th>
+                <th>Table heading 3</th>
+                <th>Table heading 4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Some data</td>
+                <td>Some more data</td>
+                <td>Some even longer data</td>
+                <td>Some data that is longer that the previous data</td>
+              </tr>
+              <tr>
+                <td>Some data</td>
+                <td>Some more data</td>
+                <td>Some even longer data</td>
+                <td>Some data that is longer that the previous data</td>
+              </tr>
+              <tr>
+                <td>Some data</td>
+                <td>Some more data</td>
+                <td>Some even longer data</td>
+                <td>Some data that is longer that the previous data</td>
+              </tr>
+              <tr>
+                <td>Some data</td>
+                <td>Some more data</td>
+                <td>Some even longer data</td>
+                <td>Some data that is longer that the previous data</td>
+              </tr>
+              <tr>
+                <td>Some data</td>
+                <td>Some more data</td>
+                <td>Some even longer data</td>
+                <td>Some data that is longer that the previous data</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="forms">
+          <h2>Forms</h2>
+          <form action="#" method="get">
+            <fieldset>
+              <legend>This is a legend</legend>
+              <div class="form-controls">
+                <label for="">Text input</label>
+                <input type="text" placeholder="This is a text input">
+              </div>
+              <div class="form-controls">
+                <label for="">Email input</label>
+                <input type="email" placeholder="This is an email input">
+              </div>
+              <div class="form-controls">
+                <label for="">Search input</label>
+                <input type="search" placeholder="This is a search input">
+              </div>
+              <div class="form-controls">
+                <label for="">Password input</label>
+                <input type="password" placeholder="This is a password input">
+              </div>
+              <div class="form-controls">
+                <label for="">Textarea</label>
+                <textarea></textarea>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div id="buttons">
+          <h2>Button</h2>
+          <p>
+            <button type="submit">This is a button tag</button>
+            <button type="submit" class="btn-primary">Primary</button>
+            <button type="submit" class="btn-info">Info</button>
+            <button type="submit" class="btn-success">success</button>
+            <button type="submit" class="btn-warning">Warning</button>
+            <button type="submit" class="btn-danger">Danger</button>
+          </p>
+        </div>
+        <div id="images">
+          <h2>Images</h2>
+          <div class="grid-25 mobile-grid-50">
+            <img src="http://placezombies.com/180x180" alt="Placeholder">
+            <p class="img-caption">Default image</p>
+          </div>
+          <div class="grid-25 mobile-grid-50">
+            <img src="http://placezombies.com/180x180" alt="Placeholder" class="img-rounded">
+            <p class="img-caption">Rounded image <code>.img-rounded</code></p>
+          </div>
+          <div class="grid-25 mobile-grid-50">
+            <img src="http://placezombies.com/180x180" alt="Placeholder" class="img-circle">
+            <p class="img-caption">Circle image <code>.img-circle</code></p>
+          </div>
+          <div class="grid-25 mobile-grid-50">
+            <img src="http://placezombies.com/180x180" alt="Placeholder" class="img-polaroid">
+            <p class="img-caption">Polaroid image <code>.img-polaroid</code></p>
+          </div>
+        </div>
+        <div id="icons">
+          <h2>Icons</h2>
+          <p>140 icons in sprite form available in dark gray by default and also in white. Provided by <a href="http://glyphicons.com/">Glyphicons</a>.</p>
+          <ul class="list-inline">
+            <li><i class="icon-glass"></i></li>
+            <li><i class="icon-music"></i></li>
+            <li><i class="icon-search"></i></li>
+            <li><i class="icon-envelope"></i></li>
+            <li><i class="icon-heart"></i></li>
+            <li><i class="icon-star"></i></li>
+            <li><i class="icon-star-empty"></i></li>
+            <li><i class="icon-user"></i></li>
+            <li><i class="icon-film"></i></li>
+            <li><i class="icon-th-large"></i></li>
+            <li><i class="icon-th"></i></li>
+            <li><i class="icon-th-list"></i></li>
+            <li><i class="icon-ok"></i></li>
+            <li><i class="icon-remove"></i></li>
+            <li><i class="icon-zoom-in"></i></li>
+            <li><i class="icon-zoom-out"></i></li>
+            <li><i class="icon-off"></i></li>
+            <li><i class="icon-signal"></i></li>
+            <li><i class="icon-cog"></i></li>
+            <li><i class="icon-trash"></i></li>
+            <li><i class="icon-home"></i></li>
+            <li><i class="icon-file"></i></li>
+            <li><i class="icon-time"></i></li>
+            <li><i class="icon-road"></i></li>
+            <li><i class="icon-download-alt"></i></li>
+            <li><i class="icon-download"></i></li>
+            <li><i class="icon-upload"></i></li>
+            <li><i class="icon-inbox"></i></li>
+            <li><i class="icon-play-circle"></i></li>
+            <li><i class="icon-repeat"></i></li>
+            <li><i class="icon-refresh"></i></li>
+            <li><i class="icon-list-alt"></i></li>
+            <li><i class="icon-lock"></i></li>
+            <li><i class="icon-flag"></i></li>
+            <li><i class="icon-headphones"></i></li>
+            <li><i class="icon-volume-off"></i></li>
+            <li><i class="icon-volume-down"></i></li>
+            <li><i class="icon-volume-up"></i></li>
+            <li><i class="icon-qrcode"></i></li>
+            <li><i class="icon-barcode"></i></li>
+            <li><i class="icon-tag"></i></li>
+            <li><i class="icon-tags"></i></li>
+            <li><i class="icon-book"></i></li>
+            <li><i class="icon-bookmark"></i></li>
+            <li><i class="icon-print"></i></li>
+            <li><i class="icon-camera"></i></li>
+            <li><i class="icon-font"></i></li>
+            <li><i class="icon-bold"></i></li>
+            <li><i class="icon-italic"></i></li>
+            <li><i class="icon-text-height"></i></li>
+            <li><i class="icon-text-width"></i></li>
+            <li><i class="icon-align-left"></i></li>
+            <li><i class="icon-align-center"></i></li>
+            <li><i class="icon-align-right"></i></li>
+            <li><i class="icon-align-justify"></i></li>
+            <li><i class="icon-list"></i></li>
+            <li><i class="icon-indent-left"></i></li>
+            <li><i class="icon-indent-right"></i></li>
+            <li><i class="icon-facetime-video"></i></li>
+            <li><i class="icon-picture"></i></li>
+            <li><i class="icon-pencil"></i></li>
+            <li><i class="icon-map-marker"></i></li>
+            <li><i class="icon-adjust"></i></li>
+            <li><i class="icon-tint"></i></li>
+            <li><i class="icon-edit"></i></li>
+            <li><i class="icon-share"></i></li>
+            <li><i class="icon-check"></i></li>
+            <li><i class="icon-move"></i></li>
+            <li><i class="icon-step-backward"></i></li>
+            <li><i class="icon-fast-backward"></i></li>
+            <li><i class="icon-backward"></i></li>
+            <li><i class="icon-play"></i></li>
+            <li><i class="icon-pause"></i></li>
+            <li><i class="icon-stop"></i></li>
+            <li><i class="icon-forward"></i></li>
+            <li><i class="icon-fast-forward"></i></li>
+            <li><i class="icon-step-forward"></i></li>
+            <li><i class="icon-eject"></i></li>
+            <li><i class="icon-chevron-left"></i></li>
+            <li><i class="icon-chevron-right"></i></li>
+            <li><i class="icon-plus-sign"></i></li>
+            <li><i class="icon-minus-sign"></i></li>
+            <li><i class="icon-remove-sign"></i></li>
+            <li><i class="icon-ok-sign"></i></li>
+            <li><i class="icon-question-sign"></i></li>
+            <li><i class="icon-info-sign"></i></li>
+            <li><i class="icon-screenshot"></i></li>
+            <li><i class="icon-remove-circle"></i></li>
+            <li><i class="icon-ok-circle"></i></li>
+            <li><i class="icon-ban-circle"></i></li>
+            <li><i class="icon-arrow-left"></i></li>
+            <li><i class="icon-arrow-right"></i></li>
+            <li><i class="icon-arrow-up"></i></li>
+            <li><i class="icon-arrow-down"></i></li>
+            <li><i class="icon-share-alt"></i></li>
+            <li><i class="icon-resize-full"></i></li>
+            <li><i class="icon-resize-small"></i></li>
+            <li><i class="icon-plus"></i></li>
+            <li><i class="icon-minus"></i></li>
+            <li><i class="icon-asterisk"></i></li>
+            <li><i class="icon-exclamation-sign"></i></li>
+            <li><i class="icon-gift"></i></li>
+            <li><i class="icon-leaf"></i></li>
+            <li><i class="icon-fire"></i></li>
+            <li><i class="icon-eye-open"></i></li>
+            <li><i class="icon-eye-close"></i></li>
+            <li><i class="icon-warning-sign"></i></li>
+            <li><i class="icon-plane"></i></li>
+            <li><i class="icon-calendar"></i></li>
+            <li><i class="icon-random"></i></li>
+            <li><i class="icon-comment"></i></li>
+            <li><i class="icon-magnet"></i></li>
+            <li><i class="icon-chevron-up"></i></li>
+            <li><i class="icon-chevron-down"></i></li>
+            <li><i class="icon-retweet"></i></li>
+            <li><i class="icon-shopping-cart"></i></li>
+            <li><i class="icon-folder-close"></i></li>
+            <li><i class="icon-folder-open"></i></li>
+            <li><i class="icon-resize-vertical"></i></li>
+            <li><i class="icon-resize-horizontal"></i></li>
+            <li><i class="icon-hdd"></i></li>
+            <li><i class="icon-bullhorn"></i></li>
+            <li><i class="icon-bell"></i></li>
+            <li><i class="icon-certificate"></i></li>
+            <li><i class="icon-thumbs-up"></i></li>
+            <li><i class="icon-thumbs-down"></i></li>
+            <li><i class="icon-hand-right"></i></li>
+            <li><i class="icon-hand-left"></i></li>
+            <li><i class="icon-hand-up"></i></li>
+            <li><i class="icon-hand-down"></i></li>
+            <li><i class="icon-circle-arrow-right"></i></li>
+            <li><i class="icon-circle-arrow-left"></i></li>
+            <li><i class="icon-circle-arrow-up"></i></li>
+            <li><i class="icon-circle-arrow-down"></i></li>
+            <li><i class="icon-globe"></i></li>
+            <li><i class="icon-wrench"></i></li>
+            <li><i class="icon-tasks"></i></li>
+            <li><i class="icon-filter"></i></li>
+            <li><i class="icon-briefcase"></i></li>
+            <li><i class="icon-fullscreen"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-100">
+      <div class="footer muted text-center">
+        <hr>
+        <ul>
+          <li><a href="https://github.com/easyart/van-sant/">Github project</a> | <a href="https://github.com/easyart/van-sant/issues">Issues</a> | <a href="https://github.com/easyart.com/van-sant/CHANGELOG.md">Changelog</a> | <a href="http://easyart.github.com/">Developers blog</a></li>
+          <li>&copy; Copyright 2013 <a href="http://www.easyart.com">Easyart</a>. All rights reserved.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="assets/js/app.min.js"></script>
+
+</body>
+</html>
