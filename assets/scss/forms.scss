@@ -34,9 +34,25 @@ textarea {
   @include box-sizing(border-box);
 }
 
+textarea {
+  width: 60%;
+  height: 12em;
+  resize: vertical;
+}
+
 .help-block {
   display: block;
   margin-bottom: 0.75em;
+}
+
+.help-inline {
+  @include inline-block;
+  vertical-align: middle;
+  margin-top: -5px;
+
+  @media only screen and (max-width: 767px) {
+    display: block;
+  }
 }
 
 .checkbox,
@@ -184,11 +200,14 @@ button,
   }
 }
 
+.control-group {
+  margin-bottom: 0.5em;
+  @extend clearfix;
+}
+
 .form-horizontal {
 
   .control-group {
-    margin-bottom: 0.5em;
-    @extend clearfix;
 
     label {
       float: left;
@@ -217,6 +236,90 @@ button,
       margin-left: 0;
     }
   }
+}
 
+.checkbox {
 
+  &.inline {
+    @include inline-block;
+  }
+}
+
+select {
+  @include inline-block;
+  width: 40%;
+  background: $white;
+  padding: 0.25em 5px;
+  border: 1px solid $keyline;
+  height: 20px;
+  line-height: 1.5;
+}
+
+input,
+select {
+
+  &.input-min {
+    width: 40px;
+  }
+
+  &.input-small {
+    width: 10%;
+  }
+
+  &.input-med {
+    width: 25%;
+  }
+
+  &.input-large {
+    width: 50%;
+  }
+
+  &.input-xlarge {
+    width: 75%;
+  }
+
+  &.input-full {
+    width: 100%;
+  }
+}
+
+// Form states
+.warning {
+  color: $warning-color;
+
+  input,
+  select,
+  textarea {
+    border-color: $warning-color;
+  }
+}
+
+.info {
+  color: $info-color;
+
+  input,
+  select,
+  textarea {
+    border-color: $info-color;
+  }
+}
+
+.error {
+  color: $error-color;
+
+  input,
+  select,
+  textarea {
+    border-color: $error-color;
+  }
+}
+
+.success {
+  color: $success-color;
+
+  input,
+  select,
+  textarea {
+    border-color: $success-color;
+  }
 }

@@ -364,6 +364,149 @@
     &lt;/div>
   &lt;/div>
 &lt;/form></code></pre>
+          <h3>Form controls</h3>
+          <h4>Inputs</h4>
+          <p>The main types of input are: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel and color:</p>
+          <div class="clearfix" style="margin-bottom: 1.5em">
+            <input type="text" placeholder="text input">
+            <input type="password" placeholder="password input">
+            <input type="datetime" placeholder="datetime input">
+            <input type="datetime-local" placeholder="date">
+            <input type="month" placeholder="month">
+            <input type="time" placeholder="time">
+            <input type="week" placeholder="week">
+            <input type="number" placeholder="number">
+            <input type="email" placeholder="email">
+            <input type="url" placeholder="url">
+            <input type="search" placeholder="search">
+            <input type="tel" placeholder="tel">
+            <input type="color" placeholder="color">
+          </div>
+          <h4>Textareas</h4>
+          <textarea></textarea>
+          <h4>Checkboxes and radio buttons</h4>
+          <form>
+            <div class="control-group">
+              <label class="checkbox">
+                <input type="checkbox">
+                Option one is this and that &mdash; be sure to include why it&rsquo;s great
+              </label>
+            </div>
+            <div class="control-group">
+              <label class="radio">
+                <input type="radio" checked>
+                Option one is this and that &mdash; be sure to include why it&rsquo;s great
+              </label>
+              <label class="radio">
+                <input type="radio">
+                Option two can be something else and selecting it will deselect option one
+              </label>
+            </div>
+          </form>
+          <h4>Inline checkboxes</h4>
+          <form>
+            <label class="checkbox inline">
+              <input type="checkbox"> 1
+            </label>
+            <label class="checkbox inline">
+              <input type="checkbox"> 2
+            </label>
+            <label class="checkbox inline">
+              <input type="checkbox"> 3
+            </label>
+          </form>
+          <h4>Selects</h4>
+          <form>
+            <select>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </form>
+          <h3>Input sizes</h3>
+          <form>
+            <div class="control-group">
+              <input type="text" class="input-min" placeholder="input-min">
+            </div>
+            <div class="control-group">
+              <input type="text" class="input-small" placeholder="input-small">
+            </div>
+            <div class="control-group">
+              <input type="text" class="input-med" placeholder="input-med">
+            </div>
+            <div class="control-group">
+              <input type="text" class="input-large" placeholder="input-large">
+            </div>
+            <div class="control-group">
+              <input type="text" class="input-xlarge" placeholder="input-xlarge">
+            </div>
+            <div class="control-group">
+              <input type="text" class="input-full" placeholder="input-full">
+            </div>
+            <div class="control-group">
+              <select class="input-min">
+                <option>input-min</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <select class="input-small">
+                <option>input-small</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <select class="input-med">
+                <option>input-med</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <select class="input-large">
+                <option>input-large</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <select class="input-xlarge">
+                <option>input-xlarge</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <select class="input-full">
+                <option>input-full</option>
+              </select>
+            </div>
+          </form>
+          <h3>Form states</h3>
+          <form class="form-horizontal">
+            <div class="control-group warning">
+              <label>Input with warning</label>
+              <div class="controls">
+                <input type="text">
+                <span class="help-inline">Something may have gone wrong</span>
+              </div>
+            </div>
+            <div class="control-group error">
+              <label>Input with error</label>
+              <div class="controls">
+                <input type="text">
+                <span class="help-inline">Please correct the error</span>
+              </div>
+            </div>
+            <div class="control-group info">
+              <label>Input with info</label>
+              <div class="controls">
+                <input type="text">
+                <span class="help-inline">Username is taken</span>
+              </div>
+            </div>
+            <div class="control-group success">
+              <label>Input with success</label>
+              <div class="controls">
+                <input type="text">
+                <span class="help-inline">Woohoo!</span>
+              </div>
+            </div>
+          </form>
         </div>
         <hr>
         <div id="buttons">
@@ -412,21 +555,23 @@
         <div id="images">
           <h2>Images</h2>
           <p>Here are some classes that alter the way images are displayed. Because they used CSS3 to achieve these styles, they will not work in versions of Internet Explorer less than 9. There is also a class of <code>.img-caption</code> which can be applied to text following images.</p>
-          <div class="grid-25 mobile-grid-50">
-            <img src="http://placezombies.com/180x180" alt="Placeholder">
-            <p class="img-caption">Default image</p>
-          </div>
-          <div class="grid-25 mobile-grid-50">
-            <img src="http://placezombies.com/180x180" alt="Placeholder" class="img-rounded">
-            <p class="img-caption">Rounded image <code>.img-rounded</code></p>
-          </div>
-          <div class="grid-25 mobile-grid-50">
-            <img src="http://placezombies.com/180x180" alt="Placeholder" class="img-circle">
-            <p class="img-caption">Circle image <code>.img-circle</code></p>
-          </div>
-          <div class="grid-25 mobile-grid-50">
-            <img src="http://placezombies.com/180x180" alt="Placeholder" class="img-polaroid">
-            <p class="img-caption">Polaroid image <code>.img-polaroid</code></p>
+          <div class="grid-container">
+            <div class="grid-25 mobile-grid-50">
+              <img src="http://placezombies.com/180x180" alt="Placeholder">
+              <p class="img-caption">Default image</p>
+            </div>
+            <div class="grid-25 mobile-grid-50">
+              <img src="http://placezombies.com/180x180" alt="Placeholder" class="img-rounded">
+              <p class="img-caption">Rounded image <code>.img-rounded</code></p>
+            </div>
+            <div class="grid-25 mobile-grid-50">
+              <img src="http://placezombies.com/180x180" alt="Placeholder" class="img-circle">
+              <p class="img-caption">Circle image <code>.img-circle</code></p>
+            </div>
+            <div class="grid-25 mobile-grid-50">
+              <img src="http://placezombies.com/180x180" alt="Placeholder" class="img-polaroid">
+              <p class="img-caption">Polaroid image <code>.img-polaroid</code></p>
+            </div>
           </div>
         </div>
         <hr>
@@ -440,7 +585,7 @@
 &lt;!-- Displays white glass icon -->
 &lt;i class="icon-glass icon-white">&lt;/i></code></pre>
           <h3>Available icons</h3>
-          <ul>
+          <ul class="grid-container">
             <li class="grid-25 mobile-grid-50"><i class="icon-glass"></i> icon-glass</li>
             <li class="grid-25 mobile-grid-50"><i class="icon-music"></i> icon-music</li>
             <li class="grid-25 mobile-grid-50"><i class="icon-search"></i> icon-search</li>
