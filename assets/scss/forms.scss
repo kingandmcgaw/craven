@@ -58,7 +58,7 @@ button,
 
 .btn-primary {
   color: #fff;
-  border-color: darken($button-primary-base-color, 10%);
+  border-color: darken($button-primary-base-color, 5%);
   @include button-primary-background;
 
   &:hover,
@@ -72,7 +72,7 @@ button,
 
 .btn-info {
   color: #fff;
-  border-color: darken($button-info-base-color, 10%);
+  border-color: darken($button-info-base-color, 5%);
   @include button-info-background;
 
   &:hover,
@@ -86,7 +86,7 @@ button,
 
 .btn-success {
   color: #fff;
-  border-color: darken($button-success-base-color, 10%);
+  border-color: darken($button-success-base-color, 5%);
   @include button-success-background;
 
   &:hover,
@@ -100,7 +100,7 @@ button,
 
 .btn-warning {
   color: #fff;
-  border-color: darken($button-warning-base-color, 10%);
+  border-color: darken($button-warning-base-color, 5%);
   @include button-warning-background;
 
   &:hover,
@@ -114,7 +114,7 @@ button,
 
 .btn-danger {
   color: #fff;
-  border-color: darken($button-danger-base-color, 10%);
+  border-color: darken($button-danger-base-color, 5%);
   @include button-danger-background;
 
   &:hover,
