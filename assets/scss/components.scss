@@ -24,7 +24,7 @@
   }
 
   a {
-    @include inline-block;
+    @extend .inline-block;
   }
 }
 
