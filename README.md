@@ -12,12 +12,8 @@ To get started you will need to clone the repo: `git clone git@github.com:easyar
 This framework uses SCSS. Refer to the [Sass documentation](http://sass-lang.com/docs.html) for information on how to use Sass/SCSS.
 
 ### Installing Sass
-1. *To install:* Run `gem install sass` from Terminal
-2. *Usage:* To compile run `sass --watch assets/scss/main.scss:assets/css/main.css assets/scss/ie.scss:assets/css/ie.css --style compressed` from Terminal
-
-### Installing Sass
-1. *To install:* Run `gem install sass` from Terminal
-2. *Usage:* To compile run `sass --watch assets/scss/main.scss:assets/css/main.css assets/scss/ie.scss:assets/css/ie.css --style compressed` from Terminal
+1. **To install:** Run `gem install sass` from Terminal
+2. **Usage:** To compile run `sass --watch assets/scss/main.scss:assets/css/main.css assets/scss/ie.scss:assets/css/ie.css --style compressed` from Terminal
 
 ## Browser support
 By default, IE8 and lower get a single column view, however by including `ie.css` for those browsers, they will get a fluid width (not responsive) layout:
