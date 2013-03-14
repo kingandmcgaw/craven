@@ -309,3 +309,28 @@ a {
     background: $white;
   }
 }
+
+.media,
+.bd {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+}
+
+.media {
+  margin-bottom: 1.5em;
+
+  .img {
+    float: left;
+    margin-right: 10px;
+
+    img {
+      display: block;
+    }
+  }
+
+  .img-ext {
+    float: right;
+    margin-left: 10px;
+  }
+}
