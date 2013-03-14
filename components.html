@@ -42,6 +42,7 @@
       <div class="grid-25 push-75">
         <div class="well">
           <ul class="list-block">
+            <li><a href="#navigation">Navigation</a></li>
             <li><a href="#breadcrumbs">Breadcrumbs</a></li>
             <li><a href="#pagination">Pagination</a></li>
             <li><a href="#alerts">Alerts</a></li>
@@ -50,6 +51,66 @@
         </div>
       </div>
       <div class="grid-75 pull-25">
+        <div id="navigation">
+          <h2>Navigation</h2>
+          <p>Basic navigation bar:</p>
+          <div class="header">
+            <ul class="nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <pre><code>&lt;div class="header">
+  &lt;ul class="nav">
+    &lt;li>&lt;a href="#">Home&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">About&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">Contact&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/div></code></pre>
+          <p>Navigation with dropdown menus:</p>
+          <div class="header">
+            <ul class="nav">
+              <li class="has-dropdown">
+                <a href="#">Artists</a>
+                <ul class="dropdown">
+                  <li><a href="#">Monet</a></li>
+                  <li><a href="#">Van Gogh</a></li>
+                  <li><a href="#">Picasso</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="#">Categories</a>
+                <ul class="dropdown">
+                  <li><a href="#">Land mammals</a></li>
+                  <li><a href="#">Contemporary</a></li>
+                  <li><a href="#">Urban</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <pre><code>&lt;div class="header">
+  &lt;ul class="nav">
+    &lt;li class="has-dropdown">
+      &lt;a href="#">Artists&lt;/a>
+      &lt;ul class="dropdown">
+        &lt;li>&lt;a href="#">Monet&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Van Gogh&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Picasso&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/li>
+    &lt;li class="has-dropdown">
+      &lt;a href="#">Categories&lt;/a>
+      &lt;ul class="dropdown">
+        &lt;li>&lt;a href="#">Land mammals&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Contemporary&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Urban&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/li>
+  &lt;/ul>
+&lt;/div></code></pre>
+        </div>
+        <hr>
         <div id="breadcrumbs">
           <h2>Breadcrumbs</h2>
           <ul class="breadcrumb">
