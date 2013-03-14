@@ -41,10 +41,6 @@ $error-color: #d14;
 $info-color: #3a87ad;
 $success-color: #468847;
 
-$button-base-color: $gray;
-$button-highlight: lighten($gray, 25%);
-$button-border: darken($gray, 10%);
-
 $button-primary-base-color: $link-color;
 $button-info-base-color: $info-color;
 $button-success-base-color: $success-color;
