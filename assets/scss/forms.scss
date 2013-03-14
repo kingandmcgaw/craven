@@ -202,7 +202,7 @@ button,
 
 .control-group {
   margin-bottom: 0.5em;
-  @extend clearfix;
+  @extend .clearfix;
 }
 
 .form-horizontal {
