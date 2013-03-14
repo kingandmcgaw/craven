@@ -15,6 +15,15 @@ This framework uses SCSS. Refer to the [Sass documentation](http://sass-lang.com
 1. *To install:* Run `gem install sass` from Terminal
 2. *Usage:* To compile run `sass --watch assets/scss/main.scss:assets/css/main.css assets/scss/ie.scss:assets/css/ie.css --style compressed` from Terminal
 
+### Installing Sass
+1. *To install:* Run `gem install sass` from Terminal
+2. *Usage:* To compile run `sass --watch assets/scss/main.scss:assets/css/main.css assets/scss/ie.scss:assets/css/ie.css --style compressed` from Terminal
+
+## Browser support
+By default, IE8 and lower get a single column view, however by including `ie.css` for those browsers, they will get a fluid width (not responsive) layout:
+
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie.css"><![endif]-->
+
 ## Links
 * [Docs](http://easyart.github.com/van-sant)
 * [Changelog](https://github.com/easyart/van-sant/blob/master/CHANGELOG.md)
