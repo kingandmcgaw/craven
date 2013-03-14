@@ -334,3 +334,47 @@ a {
     margin-left: 10px;
   }
 }
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-weight: bold;
+  color: inherit;
+  opacity: 0.25;
+  @include transition(all .2s ease);
+  font-size: 1.5em;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+    opacity: 1;
+  }
+}
+
+.alert {
+  position: relative;
+  margin-bottom: 1.5em;
+  padding: 1.5em 20px;
+  @include border-radius(5px);
+}
+
+.alert-error {
+  color: $error-color;
+  background: lighten($error-color, 50%);
+  border: 1px solid $error-color;
+}
+
+.alert-success {
+  color: $success-color;
+  background: lighten($success-color, 50%);
+  border: 1px solid $success-color;
+}
+
+.alert-info {
+  color: $info-color;
+  background: lighten($info-color, 50%);
+  border: 1px solid $info-color;
+}
