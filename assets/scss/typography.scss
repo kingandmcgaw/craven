@@ -1,4 +1,5 @@
-// Body styles
+// TYPOGRAPHY
+
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -7,7 +8,6 @@ body {
   background: $body-background;
 }
 
-// Defaults
 p,
 ul,
 ol {
@@ -56,7 +56,6 @@ ul {
 }
 
 small {
-  font-size: 75%;
   color: $muted;
 }
 
@@ -151,17 +150,6 @@ img {
   color: $muted;
 }
 
-.well {
-  margin-bottom: 1.5em;
-  padding: 1.5em 20px;
-  border: 1px solid $keyline;
-  background: $gray-lighter;
-  color: $gray-darker;
-  @include box-shadow(inset 0 0 6px rgba(0,0,0,0.1));
-  @include border-radius(3px);
-}
-
-// Headings
 h1,
 h2,
 h3,
@@ -233,7 +221,6 @@ h6 {
   }
 }
 
-// Links
 a {
   color: $link-color;
   text-decoration: none;
@@ -244,137 +231,4 @@ a {
     color: $link-color-hover;
     text-decoration: underline;
   }
-}
-
-// Utilities
-.page-header {
-  margin: 3em 0 1.5em;
-  text-align: center;
-}
-
-.list-inline {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  li {
-    display: inline;
-    margin-right: 1%;
-  }
-
-  a {
-    @include inline-block;
-  }
-}
-
-.list-block {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  li {
-    display: block;
-  }
-
-  a {
-    display: block;
-    padding: 0.25em 10px;
-    @include transition(all .2s ease);
-
-    &:hover,
-    &:active,
-    &:focus {
-      text-decoration: none;
-      color: $white;
-      background: $link-color;
-    }
-  }
-}
-
-.section {
-  margin: 3em 0 1.5em;
-}
-
-.strike {
-  position: relative;
-  display: block;
-  border-bottom: 1px solid $keyline;
-  color: $brand-dark;
-  text-align: center;
-
-  span {
-    position: relative;
-    bottom: -0.7em;
-    padding: 0 20px;
-    background: $white;
-  }
-}
-
-.media,
-.bd {
-  overflow: hidden;
-  _overflow: visible;
-  zoom: 1;
-}
-
-.media {
-  margin-bottom: 1.5em;
-
-  .img {
-    float: left;
-    margin-right: 10px;
-
-    img {
-      display: block;
-    }
-  }
-
-  .img-ext {
-    float: right;
-    margin-left: 10px;
-  }
-}
-
-.close-btn {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  font-weight: bold;
-  color: inherit;
-  opacity: 0.25;
-  @include transition(all .2s ease);
-  font-size: 1.5em;
-
-  &:hover,
-  &:active,
-  &:focus {
-    text-decoration: none;
-    color: inherit;
-    opacity: 1;
-  }
-}
-
-.alert {
-  position: relative;
-  margin-bottom: 1.5em;
-  padding: 1.5em 20px;
-  @include border-radius(5px);
-}
-
-.alert-error {
-  color: $error-color;
-  background: lighten($error-color, 50%);
-  border: 1px solid $error-color;
-}
-
-.alert-success {
-  color: $success-color;
-  background: lighten($success-color, 50%);
-  border: 1px solid $success-color;
-}
-
-.alert-info {
-  color: $info-color;
-  background: lighten($info-color, 50%);
-  border: 1px solid $info-color;
 }
