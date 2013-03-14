@@ -67,6 +67,11 @@ textarea {
   }
 }
 
+[type="checkbox"],
+[type="radio"] {
+  border: 0;
+}
+
 input[type="submit"],
 button,
 .btn {
@@ -251,7 +256,6 @@ select {
   background: $white;
   padding: 0.25em 5px;
   border: 1px solid $keyline;
-  height: 20px;
   line-height: 1.5;
 }
 
