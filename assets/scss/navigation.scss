@@ -13,7 +13,7 @@
   }
 
   a {
-    @include inline-block;
+    @extend .inline-block;
     padding: 0.75em 1%;
 
     @media only screen and (max-width: 767px) {
@@ -50,7 +50,7 @@
   @extend .clearfix;
 
   li {
-    @include inline-block;
+    @extend .inline-block;
   }
 
   a {
