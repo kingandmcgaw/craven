@@ -22,9 +22,11 @@ By default, IE8 and lower get a single column view, however by including `ie.css
 
 ## To-do
 * Modals and examples (using [Fancybox](http://fancyapps.com/fancybox/))
-* Dropdown menus
 * Tabs
 * Thumbnail examples
+* Improve dropdown menus
+* Improve breadcrumbs
+* Improve pagination
 
 ## Links
 * [Docs](http://easyart.github.com/van-sant)
