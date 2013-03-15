@@ -20,6 +20,12 @@ By default, IE8 and lower get a single column view, however by including `ie.css
 
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie.css"><![endif]-->
 
+## To-do
+* Modals and examples (using [Fancybox](http://fancyapps.com/fancybox/))
+* Dropdown menus
+* Tabs
+* Thumbnail examples
+
 ## Links
 * [Docs](http://easyart.github.com/van-sant)
 * [Changelog](https://github.com/easyart/van-sant/blob/master/CHANGELOG.md)
