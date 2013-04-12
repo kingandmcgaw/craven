@@ -1,4 +1,4 @@
-Van Sant
+Craven
 ========
 
 The front-end framework for Easyart, WorldGallery and King &amp; McGaw. This is used for rapid prototyping and front-end development and is under constant development.
@@ -27,9 +27,9 @@ By default, IE8 and lower get a single column view, however by including `ie.css
 * Improve dropdown menus
 
 ## Links
-* [Docs](http://easyart.github.com/van-sant)
-* [Changelog](https://github.com/easyart/van-sant/blob/master/CHANGELOG.md)
-* [Developers blog](http://easyart.github.com)
+* [Docs](http://easyart.github.io/craven)
+* [Changelog](https://github.com/easyart/craven/blob/master/CHANGELOG.md)
+* [Developers blog](http://easyart.github.io)
 
 ## Credits
 
