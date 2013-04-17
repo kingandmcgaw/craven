@@ -115,28 +115,32 @@ button.close-btn {
   }
 }
 
-.media,
-.bd {
-  overflow: hidden;
-  _overflow: visible;
-  zoom: 1;
+.media {
+  margin-bottom: $baseline;
 }
 
-.media {
-  margin-bottom: 1.5em;
+.media,
+.media-body {
+  overflow: hidden;
+  *overflow: visible;
+  *zoom: 1;
+}
 
-  .img {
-    float: left;
-    margin-right: 10px;
+.media-img {
+  float: left;
+  margin-right: 10px;
 
-    img {
-      display: block;
-    }
+  img {
+    display: block;
   }
+}
 
-  .img-ext {
-    float: right;
-    margin-left: 10px;
+.media-img-ext {
+  float: right;
+  margin-left: 10px;
+
+  img {
+    display: block;
   }
 }
 
