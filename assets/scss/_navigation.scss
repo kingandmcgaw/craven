@@ -4,7 +4,7 @@
   list-style: none;
   text-transform: uppercase;
 
-  li {
+  > li {
     display: inline;
 
     @media only screen and (max-width: 767px) {
@@ -17,26 +17,6 @@
     padding: 0.75em 10px;
 
     @media only screen and (max-width: 767px) {
-      display: block;
-    }
-  }
-}
-
-.dropdown {
-  display: none;
-  position: absolute;
-  left: 0;
-  background: $black;
-}
-
-.has-dropdown {
-  position: relative;
-
-  &:hover,
-  &:active,
-  &:focus {
-
-    .dropdown {
       display: block;
     }
   }
