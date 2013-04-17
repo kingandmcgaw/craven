@@ -3,7 +3,7 @@
   list-style: none;
 
   > li {
-    @extend .inline-block;
+    @include inline-block;
 
     > .divider {
       padding: 0 5px;

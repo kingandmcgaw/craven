@@ -18,7 +18,7 @@ summary {
 audio,
 canvas,
 video {
-  @extend .inline-block;
+  @include inline-block;
 }
 
 audio:not([controls]) {
