@@ -1,9 +1,8 @@
-.nav {
+.nav-list {
   @extend .clearfix;
   margin: 0;
   padding: 0;
   list-style: none;
-  text-transform: uppercase;
 
   > li {
     float: left;
@@ -15,7 +14,7 @@
 
   a {
     @extend .inline-block;
-    padding: 0.75em 20px;
+    padding: 0.75em 10px;
 
     @media only screen and (max-width: 767px) {
       display: block;
