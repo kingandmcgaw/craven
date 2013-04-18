@@ -26,13 +26,13 @@
 
 .pagination ul > li > a:hover,
 .pagination ul > li > a:focus,
-.pagination ul > .active > a,
-.pagination ul > .active > span {
+.pagination ul > .current > a,
+.pagination ul > .current > span {
   background-color: $gray-light;
 }
 
-.pagination ul > .active > a,
-.pagination ul > .active > span {
+.pagination ul > .current > a,
+.pagination ul > .current > span {
   color: $gray-dark;
   cursor: default;
 }
