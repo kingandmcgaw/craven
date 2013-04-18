@@ -1,4 +1,10 @@
 // Default styles
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 textarea,
 select,
 input[type="date"],
@@ -36,6 +42,19 @@ textarea {
   overflow: auto;
   resize: vertical;
   width: 100%;
+}
+
+.form-controls {
+  @include clearfix;
+  margin-bottom: $baseline / 2;
+
+  label {
+    display: block;
+  }
+
+  input {
+    width: 60%;
+  }
 }
 
 // Form states
