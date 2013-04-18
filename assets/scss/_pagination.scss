@@ -1,5 +1,6 @@
+// Bootstrap pagination
 .pagination {
-  margin: 1.5em 0;
+  margin: $baseline 0;
 
   ul {
     @include inline-block;
@@ -15,7 +16,7 @@
         float: left;
         padding: 0.25em 12px;
         text-decoration: none;
-        background: $white;
+        background: #fff;
         border: 1px solid $keyline;
         border-left-width: 0;
       }

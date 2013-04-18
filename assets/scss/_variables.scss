@@ -1,5 +1,11 @@
 // VARIABLES
 
+$primary-color: #574599;
+$warning-color: #c09853;
+$error-color: #d14;
+$info-color: #3a87ad;
+$success-color: #468847;
+
 $gray-lighter: #f5f5f5;
 $gray-light: #e5e5e5;
 $gray: #ccc;
@@ -9,10 +15,8 @@ $gray-darker: #666;
 $white: #fff;
 $black: #1b1b1b;
 
-$small-screen-breakpoint: 640px;
-
 $sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif: Georgia, "Times New Roman", serif;
+$serif: Palatino, Georgia, "Times New Roman", serif;
 
 $base-font-family: $sans-serif;
 $base-font-size: 87.5%;
@@ -21,7 +25,7 @@ $body-background: #fff;
 $small-font-size: 85%;
 $baseline: 1.5em;
 
-$heading-font-family: $sans-serif;
+$heading-font-family: $serif;
 $heading-font-weight: normal;
 $heading-font-color: $base-font-color;
 
@@ -29,7 +33,7 @@ $keyline: $gray;
 
 $muted: $gray-dark;
 
-$link-color: #1c96b5;
+$link-color: $primary-color;
 $link-color-hover: darken($link-color, 15%);
 
 $container-width: 90%;
@@ -38,18 +42,15 @@ $container-min-width: 280px;
 $ie-max-width: 940px;
 $ie-min-width: 940px;
 
-$warning-color: #c09853;
-$error-color: #d14;
-$info-color: #3a87ad;
-$success-color: #468847;
-
-$button-primary-base-color: $link-color;
-$button-info-base-color: $info-color;
-$button-success-base-color: $success-color;
-$button-warning-base-color: $warning-color;
-$button-danger-base-color: $error-color;
 
 $header-bg: $black;
 $header-text-color: $white;
 $header-link-color: $gray;
 $header-link-color-hover: $header-text-color;
+
+// Set up breakpoints
+$mobile: new-breakpoint(max-width 640px);
+$table: new-breakpoint(max-width 767px);
+
+
+
