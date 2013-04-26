@@ -100,10 +100,12 @@ small {
 }
 
 hr {
-  margin: 0 0 $baseline;
-  border-width: 1px 0 0;
-  border-style: solid;
-  border-color: $keyline;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $keyline;
+  margin: $baseline 0;
+  padding: 0;
   @include clearfix;
 }
 
