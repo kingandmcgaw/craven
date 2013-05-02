@@ -179,6 +179,11 @@ h5,
 h6 {
   font-family: $heading-font-family;
   font-weight: $heading-font-weight;
+
+  a:link {
+    color: $base-font-color;
+    text-decoration: none;
+  }
 }
 
 h1 {
@@ -194,6 +199,7 @@ h2 {
 
 h3 {
   font-size: 1.5em;
+  line-height: 1;
   margin: 0 0 0.5em;
 }
 
