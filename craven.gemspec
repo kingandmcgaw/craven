@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Craven::VERSION
   spec.authors       = ["Steve Rydz"]
   spec.email         = ["steverydz@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{A front-end framework for all the Easyart sites}
+  spec.summary       = %q{A front-end framework for all the Easyart sites}
+  spec.homepage      = "http://github.com/easyart/craven"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
