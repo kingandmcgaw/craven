@@ -1,5 +1,6 @@
 require "craven/version"
 
 module Craven
-  # Your code goes here...
+  class Engine < Rails::Engine
+  end
 end
