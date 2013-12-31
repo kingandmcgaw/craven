@@ -1,0 +1,161 @@
+/**
+ * Typography
+ */
+
+// Body styles
+body {
+  font: #{$font-size-base}/#{$line-height-base} $font-family-base ;
+  color: $text-color;
+  background: $body-bg;
+}
+
+// Links
+a {
+  color: $link-color;
+  text-decoration: $link-text-decoration;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $link-color-hover;
+    text-decoration: $link-text-decoration-hover;
+  }
+}
+
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+// Horizontal rules
+hr {
+  margin-top: $baseline;
+  margin-bottom: $baseline;
+  border: 0;
+  border-top: 1px solid $hr-border;
+}
+
+// Default styles
+p {
+  margin: $margin-default;
+}
+
+.lead {
+  font-size: $font-size-large;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+// Emphasis & misc.
+small,
+.small {
+  font-size: 85%;
+}
+
+cite {
+  font-style: normal;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  margin: $headings-margin;
+
+  a:link,
+  a:visited {
+    color: $headings-link-color;
+    text-decoration: $headings-link-text-decoration;
+  }
+
+  a:hover,
+  a:active,
+  a:focus {
+    color: $headings-link-color-hover;
+    text-decoration: $headings-link-text-decoration-hover;
+  }
+
+  small {
+    font-size: 60%;
+    color: $headings-small-color;
+    white-space: nowrap;
+  }
+}
+
+h1,
+.h1 {
+  font-size: $font-size-h1;
+  line-height: $line-height-h1;
+}
+
+h2,
+.h2 {
+  font-size: $font-size-h2;
+  line-height: $line-height-h2;
+}
+
+h3,
+.h3 {
+  font-size: $font-size-h3;
+  line-height: $line-height-h3;
+}
+
+h4,
+.h4 {
+  font-size: $font-size-h4;
+  line-height: $line-height-h4;
+}
+
+h5,
+.h5 {
+  font-size: $font-size-h5;
+  line-height: $line-height-h5;
+}
+
+h6,
+.h6 {
+  font-size: $font-size-h6;
+  line-height: $line-height-h6;
+}
+
+
+// Lists
+ul {
+  margin: $margin-default;
+  padding: 0;
+  list-style: none;
+
+  ul {
+    margin: 0;
+    list-style: inherit;
+  }
+
+  &.disc,
+  &.circle,
+  &.square {
+    padding-left: $list-indent;
+
+    ul {
+      padding-left: $list-indent-nested;
+    }
+
+    .unstyled {
+      padding-left: 0;
+    }
+  }
+
+  &.disc {
+    list-style: disc;
+  }
+
+  &.circle {
+    list-style: circle;
+  }
+
+  &.square {
+    list-style: square;
+  }
+}

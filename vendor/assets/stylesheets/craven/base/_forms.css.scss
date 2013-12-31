@@ -1,0 +1,154 @@
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+form {
+  margin-bottom: $baseline;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+textarea,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  @include box-sizing(border-box);
+  width: 100%;
+  max-width: 410px;
+  border-radius: 0;
+  -webkit-appearance: none;
+  background-color: white;
+  border: 1px solid $hr-border;
+  padding: 5px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: $text-muted;
+}
+
+textarea {
+  max-width: 580px;
+  min-height: $baseline * 10;
+  overflow: auto;
+  resize: vertical;
+}
+
+.control-group {
+  margin-bottom: $baseline;
+
+  label {
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+.checkbox {
+  margin-bottom: $baseline;
+}
+
+.form-inline {
+
+  .control-group,
+  .checkbox {
+    @include inline-block;
+    margin-right: 5px;
+
+    label,
+    input,
+    button {
+      @include inline-block;
+    }
+  }
+}
+
+.form-horizontal {
+
+  .control-group {
+    @include row;
+  }
+
+  .control-label {
+
+    @include respond-min($bp-medium) {
+      @include span-columns(3);
+      text-align: right;
+    }
+  }
+
+  .controls {
+
+    @include respond-min($bp-medium) {
+      @include span-columns(9);
+
+      @include lte-ie8 {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .form-actions,
+  .checkbox {
+    margin-bottom: $baseline;
+
+    @include respond-min($bp-medium) {
+      @include span-columns(9);
+      @include shift(3);
+
+      @include lte-ie8 {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.form-append {
+
+  .append-row {
+    @include row;
+
+    input {
+      @include inline-block;
+      position: relative;
+      width: auto;
+      border-right: 0;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+
+    button,
+    .btn {
+      @include inline-block;
+      position: relative;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

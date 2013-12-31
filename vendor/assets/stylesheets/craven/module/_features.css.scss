@@ -1,0 +1,9 @@
+/* ==========================================================================
+   Feature styles
+   ========================================================================== */
+
+.feature-container {
+  @include linear-gradient($gray-lighter, #fff);
+  padding-top: $baseline;
+  border-top: 1px solid $keyline-color;
+}

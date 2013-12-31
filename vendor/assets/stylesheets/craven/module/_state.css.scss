@@ -1,0 +1,59 @@
+/* ==========================================================================
+   States
+   ========================================================================== */
+
+.warning {
+  color: $brand-warning;
+
+  input,
+  select,
+  textarea {
+    border-color: $brand-warning;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.info {
+  color: $brand-info;
+
+  input,
+  select,
+  textarea {
+    border-color: $brand-info;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.error {
+  color: $brand-error;
+
+  input,
+  select,
+  textarea {
+    border-color: $brand-error;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.success {
+  color: $brand-success;
+
+  input,
+  select,
+  textarea {
+    border-color: $brand-success;
+  }
+
+  a {
+    color: inherit;
+  }
+}

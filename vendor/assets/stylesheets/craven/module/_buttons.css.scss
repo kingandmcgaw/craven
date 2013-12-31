@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+button,
+.btn,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  @include button(#eee);
+  text-align: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #333;
+  }
+}
+
+.btn-primary {
+  @include button($brand-primary);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.btn-info {
+  @include button($brand-info);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.btn-success {
+  @include button($brand-success);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.btn-warning {
+  @include button($brand-warning);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.btn-error {
+  @include button($brand-error);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+  }
+}
+
+a.btn:hover,
+a.btn:active,
+a.btn:focus {
+  text-decoration: none;
+}
+
+.btn-large {
+  padding: 7px 18px;
+  font-size: 1.25em;
+}

@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Popovers
+   ========================================================================== */
+
+/*
+   Popover base styles
+   ========================================================================== */
+.popover {
+  position: absolute;
+  display: none;
+  border: $popover-border-width solid $popover-border-color;
+  border-radius: $popover-border-radius;
+  background-color: $popover-bg-color;
+  box-shadow: $default-box-shadow;
+  z-index: $zindex-popover;
+  margin-top: $popover-carat-width;
+  margin-right: 10px;
+
+  @include respond-min($bp-medium) {
+    width: 410px;
+  }
+}
+
+.popover-show {
+  display: block;
+}
+
+.popover-body {
+  padding: $popover-padding;
+}
+
+/*
+   Popover arrow
+   ========================================================================== */
+.popover:before,
+.popover:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  bottom: 100%;
+  left: 20px;
+}
+
+.popover:before {
+  margin-left: -($popover-carat-width + $popover-border-width);
+  border-bottom-color: $popover-border-color;
+  border-width: ($popover-carat-width + $popover-border-width);
+}
+
+.popover:after {
+  margin-left: -$popover-carat-width;
+  border-bottom-color: $popover-bg-color;
+  border-width: $popover-carat-width;
+}
+
+/*
+   Popover link/button
+   ========================================================================== */
+.has-popover {
+  display: block;
+  padding: $padding-large-vertical 0;
+}

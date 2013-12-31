@@ -1,0 +1,261 @@
+/* ==========================================================================
+   Product page
+   ========================================================================== */
+
+.product-header {
+  margin-bottom: $baseline;
+
+  h1 a {
+    color: $link-color;
+  }
+
+  .product-id {
+    float: right;
+  }
+}
+
+.product-body {
+  @include clearfix;
+  margin-bottom: ($baseline * 2);
+}
+
+.product-image {
+  @include span-columns(10);
+  @include shift(2);
+  margin-bottom: $baseline;
+  text-align: center;
+
+  @include respond-min($bp-medium) {
+    @include span-columns(7);
+    @include shift(1);
+  }
+
+  img {
+    margin-bottom: $baseline;
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.3);
+  }
+
+  img.media-type-4,
+  img.media-type-5,
+  img.media-type-6,
+  img.media-type-20 {
+    box-shadow: none;
+  }
+}
+
+.product-alt-views {
+  @include span-columns(2);
+  @include shift(-12);
+
+  @include respond-min($bp-medium) {
+    @include span-columns(1);
+    @include shift(-8);
+  }
+
+  img {
+    display: block;
+    margin: 0 0 $baseline;
+    cursor: pointer;
+  }
+}
+
+.product-image-description {
+  text-align: left;
+}
+
+.product-picker {
+  position: relative;
+  margin-bottom: $baseline;
+
+  @include respond-min($bp-medium) {
+    @include span-columns(4);
+  }
+
+  @include lte-ie8 {
+    margin-right: 0;
+  }
+}
+
+.product-types-container {
+  @include row;
+}
+
+.product-price {
+  padding: $padding-base-vertical 0;
+  line-height: 1;
+  margin-bottom: ($baseline / 2);
+
+  .price {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  &.loading {
+    background: image-url("misc/ajax.gif") top left no-repeat;
+    padding: 0;
+  }
+}
+
+.product-summary-inner {
+  @extend .well;
+}
+
+.product-size-options-container {
+
+  a {
+    display: block;
+    padding: $padding-small-vertical $padding-small-horizontal;
+  }
+
+  .current {
+    background: $brand-primary;
+    border-radius: 20px;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.product-type-option {
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+
+  &.current {
+    @extend .well;
+  }
+}
+
+.product-options-link {
+  @include inline-block;
+  position: relative;
+  top: 1px;
+  margin: 0;
+  padding: 10px;
+  background: $gray-lighter;
+  border: 1px solid $hr-border;
+  border-bottom: 0;
+
+  @include respond-min($bp-medium) {
+
+    &.fixed {
+      position: fixed;
+      top: auto;
+      bottom: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+.product-type-options-container {
+  @include respond-min($bp-medium) {
+    @include span-columns(8);
+  }
+}
+
+.product-related-categories {
+  @include respond-min($bp-medium) {
+    @include span-columns(4);
+  }
+}
+
+.save-item {
+  color: $link-color;
+  cursor: pointer;
+
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: underline;
+  }
+}
+
+/*
+   Product type selectors
+   ========================================================================== */
+.product-types-container {
+  @include row;
+  position: relative;
+  top: 1px;
+  margin-bottom: 0;
+
+  > li {
+    @include span-columns(4);
+  }
+}
+
+[class*="product-icon-"] {
+  display: block;
+  width: 39px;
+  height: 39px;
+  margin: 0 auto;
+  background-image: image-url("product/product-types-sprite.png");
+  background-repeat: no-repeat;
+}
+
+.product-icon-paper {
+  background-position: 0 0;
+}
+
+.product-icon-canvas {
+  background-position: -39px 0;
+}
+
+.product-icon-frame {
+  background-position: -78px 0;
+}
+
+.product-type {
+  position: relative;
+  padding-bottom: 10px;
+
+  &.current {
+    background: transparent;
+  }
+}
+
+.product-type.current:before,
+.product-type.current:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  bottom: 0;
+  left: 50%;
+}
+
+.product-type.current:before {
+  margin-left: -11px;
+  border-bottom-color: $gray-light;
+  border-width: 11px;
+}
+
+.product-type.current:after {
+  margin-left: -10px;
+  border-bottom-color: $gray-lighter;
+  border-width: 10px;
+}
+
+.media-type-link {
+  display: block;
+  min-height: 80px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.framing-studio-header {
+  @include row;
+  margin-bottom: $baseline;
+  border-bottom: 1px solid $keyline-color;
+}
+
+.framing-studio-option {
+  float: left;
+  margin-right: 20px;
+
+  .has-popover {
+    margin-right: 20px;
+  }
+}

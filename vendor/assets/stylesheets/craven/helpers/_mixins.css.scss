@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+
+/**
+ * Outputs styles within media queries for use in an IE specific stylesheet.
+ * See http://jakearchibald.github.io/sass-ie/ for more info
+ */
+$fix-mqs: false !default;
+
+@mixin respond-min($width) {
+  @if $fix-mqs {
+    @if $fix-mqs >= $width {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $width) {
+      @content;
+    }
+  }
+}
+@mixin respond-max($width) {
+  @if $fix-mqs {
+    @if $fix-mqs <= $width {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: $width) {
+      @content;
+    }
+  }
+}
+
+$lte-ie8: false !default;
+
+@mixin lte-ie8 {
+  @if $lte-ie8 {
+    @content;
+  }
+}
+
+
+/**
+ * Resets the margin on the last grid columns from a previous breakpoint.
+ */
+@mixin reset-omega($nth) {
+  &:nth-child(#{$nth}) {
+    margin-right: 2.35765%;
+  }
+  &:nth-child(#{$nth}+1) {
+    clear: none;
+  }
+}
+
+
+/**
+ * Hides text that spans more than one line and applies an ellipsis to the end of it.
+ */
+@mixin text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

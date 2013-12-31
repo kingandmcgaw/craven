@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Modals
+   ========================================================================== */
+
+.modal {
+  padding: 5px;
+  background: #fff;
+}
+
+.modal-body {
+  -webkit-overflow-scrolling: touch;
+}
+
+.modal-footer {
+  clear: both;
+  background: #fff;
+  padding-top: $baseline;
+}
+
+#cart-modal .modal-footer {
+  @include row;
+
+  @include media($mobile) {
+    text-align: center;
+  }
+}
+
+.cart-continue {
+  margin-bottom: $baseline / 2;
+  text-align: center;
+}
+
+.cart-security {
+  float: left;
+
+  @include media($mobile) {
+    float: none;
+  }
+}
+
+.cart-verisign {
+  margin-bottom: $baseline / 2;
+}
+
+.cart-actions {
+  margin-top: 5px;
+
+  @include media($mobile) {
+    float: none;
+    margin: 0 0 $baseline;
+  }
+}
+
+#cart-iframe {
+  overflow: hidden;
+
+  @include media(max-height 600px) {
+    height: 200px;
+  }
+
+  @include media(max-height 400px) {
+    height: 100px;
+  }
+}

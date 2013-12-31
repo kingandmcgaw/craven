@@ -1,0 +1,167 @@
+/* ==========================================================================
+   Grid-based layouts
+   ========================================================================== */
+
+/*
+   Layout container
+   ========================================================================== */
+.l-container {
+  position: relative;
+  @include outer-container;
+  padding: 0 10px;
+}
+
+/*
+   Grid section
+   ========================================================================== */
+.l-grid {
+  @include row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.l-grid-2 {
+  @include span-columns(6);
+  @include omega(2n);
+
+  @include respond-min($bp-medium) {
+    @include span-columns(2);
+    @include reset-omega(2n);
+  }
+}
+
+.l-grid-4 {
+  @include respond-min($bp-medium) {
+    @include span-columns(4);
+  }
+}
+
+/**
+ * Small grid layout
+ * 2 columns by default
+ * 3 columns at first breakpoint
+ * 6 columns at second breakpoint
+ */
+.l-grid-small {
+
+  .l-grid-item {
+    @include span-columns(6);
+    @include omega(2n);
+
+    @include respond-min($bp-small) {
+      @include span-columns(4);
+      @include reset-omega(2n);
+      @include omega(3n);
+    }
+
+    @include respond-min($bp-medium) {
+      @include span-columns(2);
+      @include reset-omega(3n);
+      @include omega(6n);
+    }
+  }
+}
+
+/**
+ * Medium grid layout
+ * 1 column by default
+ * 2 columns at first breakpoint
+ * 4 columns at second breakpoint
+ */
+.l-grid-medium {
+
+  .l-grid-item {
+
+    @include respond-min($bp-small) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+
+    @include respond-min($bp-medium) {
+      @include span-columns(3);
+      @include reset-omega(2n);
+      @include omega(4n);
+    }
+  }
+}
+
+/**
+ * Large grid layout
+ * 1 column by default
+ * 3 columns at second breakpoint
+ */
+.l-grid-large {
+
+  .l-grid-item {
+
+    @include respond-min($bp-medium) {
+      @include span-columns(4);
+      @include omega(3n);
+    }
+  }
+}
+
+/**
+ * Split layout
+ * 1 column by default
+ * 2 columns at second breakpoint
+ *
+ * To be used with a wrapper of `.l-grid`:
+ *
+ *    <div class="l-grid">
+ *        <div class="l-split">...</div>
+ *        <div class="l-split">...</div>
+ *    </div>
+ */
+.l-split {
+
+  @include respond-min($bp-medium) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+}
+
+/**
+ * Reverse order of columns in split layout
+ * e.g. The first column will float right whereas the second columns will float left
+ *
+ * To be used as an extension to `.l-split`:
+ *
+ *    <div class="l-split l-split-push">...</div>
+ *    <div class="l-split l-split-pull">...</div>
+ */
+.l-split-push {
+
+  @include respond-min($bp-medium) {
+    @include shift(6);
+  }
+}
+
+.l-split-pull {
+
+  @include respond-min($bp-medium) {
+    @include shift(-12);
+  }
+}
+
+/*
+   Features grid
+   ========================================================================== */
+.l-features-grid {
+  @include row;
+}
+
+.l-features-grid-item {
+
+  @include respond-min($bp-small) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  @include respond-min($bp-medium) {
+    @include span-columns(4);
+    @include reset-omega(2n);
+    @include omega(3n);
+  }
+}

@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Framing studio
+   ========================================================================== */
+
+.framing-state-navigation {
+  overflow: hidden;
+  position: relative;
+  top: 1px;
+  list-style: none;
+  margin: 0;
+
+  > li {
+    @extend .h3;
+    margin: 0;
+    float: left;
+    width: 50%;
+    text-align: center;
+    
+    @include respond-min($bp-medium) {
+      @extend .h2;
+    }
+    
+    a {
+      display: block;
+      padding: $padding-large-vertical $padding-large-horizontal;
+      color: $brand-primary !important;
+    }
+  }
+
+  .current {
+    background: $gray-lighter;
+    border: 1px solid $keyline-color;
+    border-bottom: 0;
+    border-radius: $border-radius-base $border-radius-base 0 0;
+    color: $text-color !important;
+  }
+}
+
+.frame-thumbnail {
+  padding: 10px;
+  text-align: center;
+  
+  img {
+    box-shadow: $default-box-shadow;
+  }
+
+  small {
+    display: block;
+  }
+
+  &.current {
+    background: $brand-primary;
+    color: #fff;
+    
+    .muted {
+      color: #fff;
+    }
+    
+    img {
+      box-shadow: none;
+    }
+  }
+}
+
+.frame-thumbnail-image-wrapper {
+  min-height: 180px;
+  line-height: 180px;
+
+  img {
+    vertical-align: bottom;
+  }
+}
+
+.mount-thumbnails li {
+  @include inline-block;
+  position: relative;
+  margin: 0 2px 4px;
+}
+
+.mount-thumbnail {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $keyline-color;
+}
+
+.selected-mount-icon {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  padding: 2px;
+  background: #fff;
+  font-size: $font-size-small;
+}

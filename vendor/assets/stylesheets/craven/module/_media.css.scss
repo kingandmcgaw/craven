@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Media
+   ========================================================================== */
+
+/*
+   Images
+   ========================================================================== */
+img {
+  max-width: 100%;
+
+  &.img-rounded {
+    border-radius: 5px;
+  }
+
+  &.img-circle {
+    border-radius: 50%;
+  }
+
+  &.img-polaroid {
+    background: #fff;
+    padding: 5px;
+    border: 1px solid $keyline-color;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.25);
+  }
+}
+
+/*
+   Media object
+   ========================================================================== */
+.media {
+  margin-bottom: $baseline;
+}
+
+.media,
+.media-body {
+  overflow: hidden;
+  *overflow: visible;
+  *zoom: 1;
+}
+
+.media-img {
+
+  @include respond-min($bp-small) {
+    float: left;
+    margin: 0 10px 0 0;
+  }
+
+  img {
+    display: block;
+  }
+}
+
+.media-img-rev {
+
+  @include respond-min($bp-small) {
+    float: right;
+    margin: 0 0 0 10px;
+  }
+
+  img {
+    display: block;
+  }
+}

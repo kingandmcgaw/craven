@@ -1,0 +1,24 @@
+/* ==========================================================================
+   Breadcrumbs
+   ========================================================================== */
+
+.breadcrumb {
+  margin: 0 0 $baseline;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  background: none;
+
+  > li {
+    @include inline-block;
+
+    > .divider {
+      padding: 0 5px;
+      color: $keyline-color;
+    }
+  }
+
+  > .active {
+    color: $gray-dark;
+  }
+}
