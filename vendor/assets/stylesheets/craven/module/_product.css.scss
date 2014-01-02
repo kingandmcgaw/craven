@@ -76,10 +76,6 @@
   }
 }
 
-.product-types-container {
-  @include row;
-}
-
 .product-price {
   padding: $padding-base-vertical 0;
   line-height: 1;
@@ -175,9 +171,13 @@
    ========================================================================== */
 .product-types-container {
   @include row;
+  padding-top: 5px;
+  font-size: $font-size-small;
   position: relative;
   top: 1px;
   margin-bottom: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 
   > li {
     @include span-columns(4);
@@ -228,7 +228,7 @@
 
 .product-type.current:before {
   margin-left: -11px;
-  border-bottom-color: $gray-light;
+  border-bottom-color: $gray;
   border-width: 11px;
 }
 
@@ -240,7 +240,7 @@
 
 .media-type-link {
   display: block;
-  min-height: 80px;
+  // min-height: 80px;
   text-transform: capitalize;
   text-align: center;
 }
