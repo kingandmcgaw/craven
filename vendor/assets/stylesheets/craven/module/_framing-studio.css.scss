@@ -15,11 +15,7 @@
     float: left;
     width: 50%;
     text-align: center;
-    
-    @include respond-min($bp-medium) {
-      @extend .h2;
-    }
-    
+
     a {
       display: block;
       padding: $padding-large-vertical $padding-large-horizontal;
@@ -39,7 +35,7 @@
 .frame-thumbnail {
   padding: 10px;
   text-align: center;
-  
+
   img {
     box-shadow: $default-box-shadow;
   }
@@ -51,11 +47,11 @@
   &.current {
     background: $brand-primary;
     color: #fff;
-    
+
     .muted {
       color: #fff;
     }
-    
+
     img {
       box-shadow: none;
     }
