@@ -61,3 +61,23 @@ $lte-ie8: false !default;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+
+/**
+ * Vertical alignment
+ */
+@mixin vertical-align-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin vertical-align-baseline {
+  position: relative;
+  top: 100%;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
