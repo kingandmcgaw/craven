@@ -78,7 +78,7 @@
 }
 
 .product-price {
-  padding: $padding-base-vertical 0;
+  padding-bottom: $padding-base-vertical;
   margin-bottom: ($baseline / 2);
 
   .price {
@@ -99,7 +99,7 @@
 }
 
 .product-size-options-container {
-  margin-bottom: ($baseline / 2);
+  margin-bottom: 0;
 
   li:last-child {
     padding-bottom: ($baseline / 2);
