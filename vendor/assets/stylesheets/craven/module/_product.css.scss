@@ -65,7 +65,6 @@
 }
 
 .product-picker {
-  position: relative;
   margin-bottom: $baseline;
 
   @include respond-min($bp-medium) {
@@ -182,9 +181,7 @@
   @include row;
   padding-top: 5px;
   font-size: $font-size-small;
-  position: relative;
-  top: 1px;
-  margin-bottom: 0;
+  margin-bottom: -1px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 
