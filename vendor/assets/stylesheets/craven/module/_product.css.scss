@@ -116,6 +116,10 @@
   }
 }
 
+.discount strong {
+  font-weight: normal;
+}
+
 .product-summary-inner {
   @extend .well;
   padding: $baseline 15px;
