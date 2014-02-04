@@ -136,12 +136,14 @@
 
   a {
     display: block;
-    padding: $padding-small-vertical $padding-small-horizontal;
+    padding: $padding-small-vertical $padding-small-horizontal $padding-small-vertical 0;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   .current {
-    background: $brand-primary;
-    border-radius: 20px;
 
     a {
       color: #fff;
@@ -245,6 +247,11 @@
 
   &.current {
     background: transparent;
+
+    a {
+      color: $text-color;
+      font-weight: bold;
+    }
   }
 }
 
@@ -332,5 +339,50 @@
     :focus & {
       text-decoration: none;
     }
+  }
+}
+
+
+
+/**
+ * Product size selectors
+ */
+.product-size-options-container {
+
+  .product-size {
+    padding-left: 18px;
+
+    &.current {
+      padding-left: 0;
+    }
+  }
+
+  .size-details {
+    display: none;
+    margin: -10px 0 0 18px;
+  }
+
+  .current {
+    background: none;
+
+    a {
+      color: $black;
+    }
+
+    .size-title {
+      color: $black;
+      font-weight: bold;
+    }
+
+    .size-details {
+      display: block;
+    }
+  }
+
+  .product-details-link {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    color: $brand-primary;
   }
 }
