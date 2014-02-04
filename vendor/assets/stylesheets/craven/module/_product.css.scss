@@ -28,10 +28,12 @@
   @include shift(2);
   margin-bottom: $baseline;
   text-align: center;
+  cursor: pointer;
 
   @include respond-min($bp-medium) {
     @include span-columns(7);
     @include shift(1);
+    min-height: 530px;
   }
 
   img {
