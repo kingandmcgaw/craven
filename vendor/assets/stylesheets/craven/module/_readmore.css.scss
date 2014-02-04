@@ -1,0 +1,26 @@
+/**
+ * Readmore
+ */
+.readmore-crop {
+  margin: 0 0 ($baseline / 2);
+}
+
+.has-js {
+
+  .readmore-crop {
+    overflow: hidden;
+  }
+
+  .readmore-crop-60 {
+    max-height: 60px;
+  }
+
+  .readmore-crop-90 {
+    max-height: 90px;
+  }
+}
+
+.readmore-toggle-controls {
+  display: block;
+  margin: ($baseline / 2) 0;
+}

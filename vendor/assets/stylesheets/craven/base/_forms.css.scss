@@ -1,7 +1,6 @@
-/* ==========================================================================
-   Forms
-   ========================================================================== */
-
+/**
+ * Basic form styles
+ */
 form {
   margin-bottom: $baseline;
 }
@@ -61,6 +60,11 @@ textarea {
   resize: vertical;
 }
 
+
+
+/**
+ * Form layouts
+ */
 .control-group {
   margin-bottom: $baseline;
 
@@ -149,6 +153,50 @@ textarea {
       position: relative;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
+    }
+  }
+}
+
+
+
+/**
+ * Search form
+ */
+.search-form {
+  // Fixes alignment problems in the search form when typeahead kicks in
+  .form-append {
+
+    input {
+      width: 60%;
+      height: 30px;
+    }
+
+    button {
+      @include inline-block;
+      position: relative;
+      top: 0;
+      height: 30px;
+      vertical-align: middle;
+    }
+  }
+
+  .append-row {
+    position: relative;
+  }
+
+  .form-append {
+
+    .twitter-typeahead {
+      @include inline-block;
+      position: relative;
+      width: 60%;
+      top: 0;
+      vertical-align: middle;
+
+      input {
+        width: 100%;
+        vertical-align: inherit !important;
+      }
     }
   }
 }
