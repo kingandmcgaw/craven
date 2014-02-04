@@ -1,19 +1,17 @@
-/* ==========================================================================
-   Grid-based layouts
-   ========================================================================== */
-
-/*
-   Layout container
-   ========================================================================== */
+/**
+ * Layout container
+ */
 .l-container {
   position: relative;
   @include outer-container;
   padding: 0 10px;
 }
 
-/*
-   Grid section
-   ========================================================================== */
+
+
+/**
+ * Grid section
+ */
 .l-grid {
   @include row;
   margin: 0;
@@ -36,6 +34,36 @@
     @include span-columns(4);
   }
 }
+
+
+
+/**
+ * Mini grid layout
+ * 2 columns by default
+ * 3 columns at first breakpoint
+ * 4 columns at second breakpoint
+ */
+.l-grid-mini {
+
+  .l-grid-item {
+    @include span-columns(6);
+    @include omega(2n);
+
+    @include respond-min($bp-small) {
+      @include span-columns(4);
+      @include reset-omega(2n);
+      @include omega(3n);
+    }
+
+    @include respond-min($bp-medium) {
+      @include span-columns(3);
+      @include reset-omega(3n);
+      @include omega(4n);
+    }
+  }
+}
+
+
 
 /**
  * Small grid layout
@@ -63,6 +91,8 @@
   }
 }
 
+
+
 /**
  * Medium grid layout
  * 1 column by default
@@ -86,6 +116,8 @@
   }
 }
 
+
+
 /**
  * Large grid layout
  * 1 column by default
@@ -101,6 +133,8 @@
     }
   }
 }
+
+
 
 /**
  * Split layout
@@ -121,6 +155,8 @@
     @include omega(2n);
   }
 }
+
+
 
 /**
  * Reverse order of columns in split layout
@@ -145,9 +181,11 @@
   }
 }
 
-/*
-   Features grid
-   ========================================================================== */
+
+
+/**
+ * Features grid
+ */
 .l-features-grid {
   @include row;
 }

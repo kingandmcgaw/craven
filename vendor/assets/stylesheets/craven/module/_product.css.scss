@@ -1,7 +1,6 @@
-/* ==========================================================================
-   Product page
-   ========================================================================== */
-
+/**
+ * Product page layout
+ */
 .product-header {
   margin-bottom: $baseline;
 
@@ -19,6 +18,11 @@
   margin-bottom: ($baseline * 2);
 }
 
+
+
+/**
+ * Product image
+ */
 .product-image {
   @include span-columns(10);
   @include shift(2);
@@ -35,15 +39,25 @@
     box-shadow: 1px 1px 7px rgba(0,0,0,0.3);
   }
 
-  img.media-type-4,
-  img.media-type-5,
-  img.media-type-6,
-  img.media-type-20,
-  img.media-type-30 {
+  .media-type-4,
+  .media-type-5,
+  .media-type-6,
+  .media-type-20,
+  .media-type-30 {
     box-shadow: none;
   }
 }
 
+.product-zoom-link {
+  font-size: $font-size-small;
+  cursor: pointer;
+}
+
+
+
+/**
+ * Alternate/detail views
+ */
 .product-alt-views {
   @include span-columns(2);
   @include shift(-12);
@@ -60,8 +74,16 @@
   }
 }
 
+/**
+ * Product summary
+ */
 .product-image-description {
   text-align: left;
+}
+
+.product-description-inner {
+  padding-bottom: ($baseline / 2);
+  border-bottom: 1px solid $keyline-color;
 }
 
 .product-picker {
@@ -77,8 +99,7 @@
 }
 
 .product-price {
-  padding-top: 7px;
-  padding-bottom: $padding-base-vertical;
+  padding-top: ($baseline / 2);
   margin-bottom: ($baseline / 2);
 
   .price {
@@ -175,9 +196,9 @@
   }
 }
 
-/*
-   Product type selectors
-   ========================================================================== */
+/**
+ * Product type selectors
+ */
 .product-types-container {
   @include row;
   padding-top: 5px;
@@ -247,11 +268,15 @@
 
 .media-type-link {
   display: block;
-  // min-height: 80px;
   text-transform: capitalize;
   text-align: center;
 }
 
+
+
+/**
+ * Framing studio
+ */
 .framing-studio-header {
   @include row;
   margin-bottom: $baseline;
@@ -267,7 +292,31 @@
   }
 }
 
-.product-zoom-link {
-  font-size: $font-size-small;
-  cursor: pointer;
+
+
+/**
+ * Add to cart button
+ */
+.add-to-cart {
+  width: 100%;
+  margin-bottom: ($baseline / 2);
+  font-weight: normal;
+}
+
+
+
+/**
+ * Save for later
+ */
+.save-for-later {
+
+  .icon-heart {
+    color: $brand-red;
+
+    :hover &,
+    :active &,
+    :focus & {
+      text-decoration: none;
+    }
+  }
 }
