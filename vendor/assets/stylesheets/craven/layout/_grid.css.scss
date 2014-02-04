@@ -159,6 +159,28 @@
 
 
 /**
+ * Split layout for narrow columns
+ */
+.l-split-small {
+
+  @include respond-min($bp-small) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  @include respond-min($bp-medium) {
+    @include fill-parent;
+  }
+
+  @include respond-min($bp-large) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+}
+
+
+
+/**
  * Reverse order of columns in split layout
  * e.g. The first column will float right whereas the second columns will float left
  *
