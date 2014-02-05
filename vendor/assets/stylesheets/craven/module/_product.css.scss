@@ -395,10 +395,19 @@
     }
   }
 
-  .product-details-link {
+  // Needs selector to overried styles
+  a.product-details-link {
     margin: 0;
     padding: 0;
     display: inline;
-    color: $brand-primary;
+    color: $link-color;
+    text-decoration: $link-text-decoration;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $link-color-hover;
+      text-decoration: $link-text-decoration-hover;
+    }
   }
 }
