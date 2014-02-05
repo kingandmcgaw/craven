@@ -318,7 +318,7 @@
 }
 
 .lead-time-container {
-  margin-bottom: ($baseline / 10);
+  margin-bottom: ($baseline / 2);
 
   @include respond-min($bp-small) {
     margin-bottom: 0;
