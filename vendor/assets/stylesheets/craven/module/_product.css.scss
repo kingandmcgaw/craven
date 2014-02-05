@@ -317,6 +317,22 @@
   font-weight: normal;
 }
 
+.lead-time-container {
+  margin-bottom: ($baseline / 10);
+
+  @include respond-min($bp-small) {
+    margin-bottom: 0;
+  }
+
+  @include respond-min($bp-medium) {
+    margin-bottom: ($baseline / 2);
+  }
+
+  @include respond-min($bp-large) {
+    margin-bottom: 0;
+  }
+}
+
 
 
 /**
