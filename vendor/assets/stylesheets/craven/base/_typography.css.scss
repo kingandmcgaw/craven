@@ -46,9 +46,9 @@ p {
 
 .lead {
   font-family: $font-family-lead;
-  font-size: $font-size-large;
-  font-weight: 200;
-  line-height: 1.4;
+  font-size: $font-size-lead;
+  font-weight: $font-weight-lead;
+  line-height: $line-height-lead;
 }
 
 .feature-text {

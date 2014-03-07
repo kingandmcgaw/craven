@@ -57,11 +57,15 @@ $font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
 $font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
 $font-family-base: $font-family-sans-serif;
-$font-family-lead: $font-family-base;
 
 $font-size-base: 14px;
 $font-size-large: $font-size-base * 1.25;
 $font-size-small: $font-size-base * 0.85;
+
+$font-family-lead: $font-family-base;
+$font-size-lead: $font-size-large;
+$font-weight-lead: 200;
+$line-height-lead: 1.4;
 
 $line-height-base: 1.4;
 $baseline: 20px;
