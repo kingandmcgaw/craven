@@ -1,6 +1,8 @@
-/**
- * Generic layout
- */
+//
+// Page layouts
+// ==============================================
+
+// Generic page layout
 .content-area {
 
   @include respond-min($bp-medium) {
@@ -19,9 +21,7 @@
 
 
 
-/**
- * Three column page layout
- */
+// Three column page layout
 .main-content {
 
   @include respond-min($bp-medium) {
@@ -43,5 +43,16 @@
   @include respond-min($bp-medium) {
     @include span-columns(3);
     margin-right: 0;
+  }
+}
+
+
+
+// Inset page layout
+.page-inset {
+
+  @include respond-min($bp-medium) {
+    @include span-columns(10);
+    @include shift(1);
   }
 }

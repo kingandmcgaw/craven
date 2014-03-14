@@ -180,3 +180,11 @@
     z-index: 1;
   }
 }
+
+.pullquote {
+  margin: ($baseline * 2) 0;
+  font-size: $font-size-large;
+  font-family: $font-family-serif;
+  font-style: italic;
+  text-align: center;
+}
