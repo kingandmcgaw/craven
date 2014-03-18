@@ -21,200 +21,200 @@
  */
 
 // 1. Grayscale
-$white: #fff;
-$gray-lighter: #f5f5f5;
-$gray-light: #e5e5e5;
-$gray: #dadada;
-$gray-dark: #8f8f8f;
-$gray-darker: #666;
-$black: #1b1b1b;
+$white: #fff !default;
+$gray-lighter: #f5f5f5 !default;
+$gray-light: #e5e5e5 !default;
+$gray: #dadada !default;
+$gray-dark: #8f8f8f !default;
+$gray-darker: #666 !default;
+$black: #1b1b1b !default;
 
 // 2. Brand colours
-$brand-primary: #1C96B5;
-$brand-warning: #c09853;
-$brand-error: #d14;
-$brand-info: #3a87ad;
-$brand-success: #468847;
-$brand-red: #df1a22;
-$brand-red-dark: #a61217;
+$brand-primary: #1C96B5 !default;
+$brand-warning: #c09853 !default;
+$brand-error: #d14 !default;
+$brand-info: #3a87ad !default;
+$brand-success: #468847 !default;
+$brand-red: #df1a22 !default;
+$brand-red-dark: #a61217 !default;
 
 // 3. Base styles
-$body-bg: #fff;
-$text-color: $black;
+$body-bg: #fff !default;
+$text-color: $black !default;
 
 // 4. Lists
-$list-indent: 20px;
-$list-indent-nested: $list-indent;
+$list-indent: 20px !default;
+$list-indent-nested: $list-indent !default;
 
 // 5. Links
-$link-color: $brand-primary;
-$link-color-hover: darken($link-color, 15%);
-$link-text-decoration: none;
-$link-text-decoration-hover: underline;
+$link-color: $brand-primary !default;
+$link-color-hover: darken($link-color, 15%) !default;
+$link-text-decoration: none !default;
+$link-text-decoration-hover: underline !default;
 
 // 6. Typography
-$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-serif: Georgia, "Times New Roman", Times, serif;
-$font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
-$font-family-base: $font-family-sans-serif;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
 
-$font-size-base: 14px;
-$font-size-large: $font-size-base * 1.25;
-$font-size-small: $font-size-base * 0.85;
+$font-size-base: 14px !default;
+$font-size-large: $font-size-base * 1.25 !default;
+$font-size-small: $font-size-base * 0.85 !default;
 
-$font-family-lead: $font-family-base;
-$font-size-lead: $font-size-large;
-$font-weight-lead: 200;
-$line-height-lead: 1.4;
+$font-family-lead: $font-family-base !default;
+$font-size-lead: $font-size-large !default;
+$font-weight-lead: 200 !default;
+$line-height-lead: 1.4 !default;
 
-$line-height-base: 1.4;
-$baseline: 20px;
+$line-height-base: 1.4 !default;
+$baseline: 20px !default;
 
-$margin-default: 0 0 round($baseline / 2);
+$margin-default: 0 0 round($baseline / 2) !default;
 
-$font-size-h1: round($font-size-base * 2.50);
-$font-size-h2: round($font-size-base * 1.5);
-$font-size-h3: round($font-size-base * 1.25);
-$font-size-h4: round($font-size-base * 1.1);
-$font-size-h5: $font-size-base;
-$font-size-h6: round($font-size-base * 0.85);
+$font-size-h1: round($font-size-base * 2.50) !default;
+$font-size-h2: round($font-size-base * 1.5) !default;
+$font-size-h3: round($font-size-base * 1.25) !default;
+$font-size-h4: round($font-size-base * 1.1) !default;
+$font-size-h5: $font-size-base !default;
+$font-size-h6: round($font-size-base * 0.85) !default;
 
-$line-height-h1: 1;
-$line-height-h2: $line-height-base;
-$line-height-h3: 1;
-$line-height-h4: 1.25;
-$line-height-h5: $line-height-base;
-$line-height-h6: $line-height-base;
+$line-height-h1: 1 !default;
+$line-height-h2: $line-height-base !default;
+$line-height-h3: 1 !default;
+$line-height-h4: 1.25 !default;
+$line-height-h5: $line-height-base !default;
+$line-height-h6: $line-height-base !default;
 
-$headings-font-family: $font-family-base;
-$headings-font-weight: 500;
-$headings-line-height: 1.1;
-$headings-color: inherit;
-$headings-margin: 0 0 round($baseline / 2);
+$headings-font-family: $font-family-base !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.1 !default;
+$headings-color: inherit !default;
+$headings-margin: 0 0 round($baseline / 2) !default;
 
-$headings-link-color: $text-color;
-$headings-link-color-hover: $headings-link-color;
-$headings-link-text-decoration: none;
-$headings-link-text-decoration-hover: underline;
+$headings-link-color: $text-color !default;
+$headings-link-color-hover: $headings-link-color !default;
+$headings-link-text-decoration: none !default;
+$headings-link-text-decoration-hover: underline !default;
 
 // 7. Components
-$padding-base-vertical: 6px;
-$padding-base-horizontal: 12px;
+$padding-base-vertical: 6px !default;
+$padding-base-horizontal: 12px !default;
 
-$padding-large-vertical: 10px;
-$padding-large-horizontal: 16px;
+$padding-large-vertical: 10px !default;
+$padding-large-horizontal: 16px !default;
 
-$padding-small-vertical: 5px;
-$padding-small-horizontal: 10px;
+$padding-small-vertical: 5px !default;
+$padding-small-horizontal: 10px !default;
 
-$line-height-large: 1.33;
-$line-height-small: 1.5;
+$line-height-large: 1.33 !default;
+$line-height-small: 1.5 !default;
 
-$border-radius-base: 4px;
-$border-radius-large: 6px;
-$border-radius-small: 3px;
+$border-radius-base: 4px !default;
+$border-radius-large: 6px !default;
+$border-radius-small: 3px !default;
 
-$component-active-color: $white;
-$component-active-bg: $brand-primary;
+$component-active-color: $white !default;
+$component-active-bg: $brand-primary !default;
 
 // 8. Buttons
-$btn-font-weight: normal;
+$btn-font-weight: normal !default;
 
-$btn-default-color: #333;
-$btn-default-bg: $white;
-$btn-default-border: darken($btn-default-bg, 5%);
+$btn-default-color: #333 !default;
+$btn-default-bg: $white !default;
+$btn-default-border: darken($btn-default-bg, 5%) !default;
 
-$btn-success-color: $white;
-$btn-success-bg: $brand-success;
-$btn-success-border: darken($btn-success-bg, 5%);
+$btn-success-color: $white !default;
+$btn-success-bg: $brand-success !default;
+$btn-success-border: darken($btn-success-bg, 5%) !default;
 
-$btn-warning-color: $white;
-$btn-warning-bg: $brand-warning;
-$btn-warning-border: darken($btn-warning-bg, 5%);
+$btn-warning-color: $white !default;
+$btn-warning-bg: $brand-warning !default;
+$btn-warning-border: darken($btn-warning-bg, 5%) !default;
 
-$btn-info-color: $white;
-$btn-info-bg: $brand-info;
-$btn-info-border: darken($btn-info-bg, 5%);
+$btn-info-color: $white !default;
+$btn-info-bg: $brand-info !default;
+$btn-info-border: darken($btn-info-bg, 5%) !default;
 
-$btn-link-disabled-color: $gray-light;
+$btn-link-disabled-color: $gray-light !default;
 
 // 9. Forms
-$input-bg: $white;
-$input-bg-disabled: $gray-lighter;
+$input-bg: $white !default;
+$input-bg-disabled: $gray-lighter !default;
 
-$input-color: $gray;
-$input-border: #ccc;
-$input-border-radius: $border-radius-base;
-$input-border-focus: #66afe9;
+$input-color: $gray !default;
+$input-border: #ccc !default;
+$input-border-radius: $border-radius-base !default;
+$input-border-focus: #66afe9 !default;
 
-$input-color-placeholder: $gray-light;
+$input-color-placeholder: $gray-light !default;
 
-$input-height-base: ($baseline + ($padding-base-vertical * 2) + 2);
-$input-height-large: (floor($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2);
-$input-height-small: (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2);
+$input-height-base: ($baseline + ($padding-base-vertical * 2) + 2) !default;
+$input-height-large: (floor($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
+$input-height-small: (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
 
-$legend-color: $gray-dark;
-$legend-border-color: #e5e5e5;
+$legend-color: $gray-dark !default;
+$legend-border-color: #e5e5e5 !default;
 
-$input-group-addon-bg: $gray-lighter;
-$input-group-addon-border-color: $input-border;
+$input-group-addon-bg: $gray-lighter !default;
+$input-group-addon-border-color: $input-border !default;
 
 // 10. Pagination
-$pagination-bg: $white;
-$pagination-border: #ddd;
+$pagination-bg: $white !default;
+$pagination-border: #ddd !default;
 
-$pagination-hover-bg: $gray-lighter;
+$pagination-hover-bg: $gray-lighter !default;
 
-$pagination-active-bg: $brand-primary;
-$pagination-active-color: $white;
+$pagination-active-bg: $brand-primary !default;
+$pagination-active-color: $white !default;
 
-$pagination-disabled-color: $gray-light;
+$pagination-disabled-color: $gray-light !default;
 
 // 11. States
-$state-warning-text: #c09853;
-$state-warning-bg: #fcf8e3;
-$state-warning-border: darken(adjust-hue($state-warning-bg, -10), 3%);
+$state-warning-text: #c09853 !default;
+$state-warning-bg: #fcf8e3 !default;
+$state-warning-border: darken(adjust-hue($state-warning-bg, -10), 3%) !default;
 
-$state-danger-text: #b94a48;
-$state-danger-bg: #f2dede;
-$state-danger-border: darken(adjust-hue($state-danger-bg, -10), 3%);
+$state-danger-text: #b94a48 !default;
+$state-danger-bg: #f2dede !default;
+$state-danger-border: darken(adjust-hue($state-danger-bg, -10), 3%) !default;
 
-$state-success-text: #468847;
-$state-success-bg: #dff0d8;
-$state-success-border: darken(adjust-hue($state-success-bg, -10), 5%);
+$state-success-text: #468847 !default;
+$state-success-bg: #dff0d8 !default;
+$state-success-border: darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
-$state-info-text: #3a87ad;
-$state-info-bg: #d9edf7;
-$state-info-border: darken(adjust-hue($state-info-bg, -10), 7%);
+$state-info-text: #3a87ad !default;
+$state-info-bg: #d9edf7 !default;
+$state-info-border: darken(adjust-hue($state-info-bg, -10), 7%) !default;
 
 // 12. Miscellaneous
-$keyline-color: #ccc;
-$hr-border: $keyline-color;
-$default-box-shadow: 1px 1px 7px rgba(0,0,0,0.15);
-$text-muted: $gray-dark;
-$headings-small-color: $text-muted;
+$keyline-color: #ccc !default;
+$hr-border: $keyline-color !default;
+$default-box-shadow: 1px 1px 7px rgba(0,0,0,0.15) !default;
+$text-muted: $gray-dark !default;
+$headings-small-color: $text-muted !default;
 
 // 13. Stacking
-$zindex-popover: 1010;
+$zindex-popover: 1010 !default;
 
 // 14. Popovers
-$popover-padding: $padding-base-vertical $padding-base-horizontal;
-$popover-border-width: 1px;
-$popover-border-color: $keyline-color;
-$popover-border-radius: $border-radius-base;
-$popover-bg-color: #fff;
-$popover-carat-width: 10px;
+$popover-padding: $padding-base-vertical $padding-base-horizontal !default;
+$popover-border-width: 1px !default;
+$popover-border-color: $keyline-color !default;
+$popover-border-radius: $border-radius-base !default;
+$popover-bg-color: #fff !default;
+$popover-carat-width: 10px !default;
 
 // 15. Breakpoints
-$bp-small: 500px;
-$bp-medium: 767px;
-$bp-large: 900px;
-$bp-xlarge: 1030px;
+$bp-small: 500px !default;
+$bp-medium: 767px !default;
+$bp-large: 900px !default;
+$bp-xlarge: 1030px !default;
 
 /**
  * TODO: These need to be phased out
  */
-$mobile: new-breakpoint(max-width 560px);
-$tablet: new-breakpoint(max-width 767px);
-$tablet-only: new-breakpoint(min-width 640px max-width 767px);
-$desktop-mini: new-breakpoint(min-width 768px max-width 940px);
+$mobile: new-breakpoint(max-width 560px) !default;
+$tablet: new-breakpoint(max-width 767px) !default;
+$tablet-only: new-breakpoint(min-width 640px max-width 767px) !default;
+$desktop-mini: new-breakpoint(min-width 768px max-width 940px) !default;
