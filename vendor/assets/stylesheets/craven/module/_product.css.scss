@@ -411,3 +411,163 @@
     }
   }
 }
+
+
+/**
+ * Framing toggle
+ */
+.framing-toggle {
+  border-bottom: 1px solid $keyline-color;
+  margin-bottom: ($baseline / 2);
+  padding: 0 0 ($baseline / 2) 0;
+  line-height: 100%;
+
+  .framing-toggle-description {
+
+    .frame-title {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      float: left;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+.add-a-frame-section {
+  display: block;
+  margin-bottom: ($baseline / 2);
+  padding-bottom: ($baseline / 2);
+  border-bottom: 1px solid $keyline-color;
+
+  a {
+    font-weight: bold;
+  }
+}
+
+.product-sizes {
+  margin-bottom: ($baseline / 2);
+  padding-bottom: ($baseline / 2);
+  border-bottom: 1px solid $keyline-color;
+
+  .product-size-popover {
+    width: 210px;
+    z-index: 1450;
+
+    @include respond-min($bp-large) {
+      width: 250px;
+    }
+  }
+}
+
+.product-summary-description {
+  padding: 0; /* remove padding from .has-popover */
+}
+
+.product-size-options-container {
+  margin-bottom: 0;
+
+  li:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  div {
+    &:hover {
+      background-color: $brand-primary;
+
+      a {
+        color: $white;
+      }
+    }
+
+    &.current:hover {
+      background-color: $white;
+
+      a {
+        cursor: default;
+        color: $black;
+      }
+    }
+  }
+}
+
+.product-summary-inner {
+
+  .product-summary-description {
+    float: left;
+    width: 80%;
+  }
+
+  .product-summary-price {
+    float: left;
+    width: 20%;
+    text-align: right;
+  }
+}
+
+.product-types-container {
+  margin-bottom: -2px;
+  padding-top: 0;
+
+  > li {
+    @include inline-block;
+    float: none;
+    width: auto;
+    margin: 0;
+
+    a {
+      padding: $padding-large-vertical $padding-large-horizontal;
+    }
+  }
+
+  .current {
+    background: $gray-lighter;
+    border: 1px solid $keyline-color;
+    border-bottom: 0;
+    border-radius: 5px 5px 0 0;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.product-type {
+  @include inline-block;
+  padding: 0;
+}
+
+// USP row
+.usp-row {
+  display: block;
+
+  .content-area-reverse {
+    @include respond-min($bp-small) {
+      @include span-columns(9);
+      @include shift(0);
+    }
+  }
+
+  .sidebar-reverse {
+    @include respond-min($bp-small) {
+      @include span-columns(3);
+      @include shift(0);
+    }
+  }
+}
+
+.product-image {
+  min-height: 0;
+}
+
+.size-details small {
+  display: block;
+}

@@ -92,3 +92,101 @@
   background: #fff;
   font-size: $font-size-small;
 }
+
+.framing-section {
+  display: none;
+}
+
+.fancybox-inner {
+  .framing-section {
+    display: block;
+  }
+}
+
+.framing-studio-option .popover {
+
+  @include respond-min($bp-large) {
+    width: 410px;
+  }
+}
+
+.framing-section {
+
+  @include respond-min($bp-medium) {
+    width: 700px;
+  }
+
+  @include respond-min($bp-large) {
+    width: 860px;
+  }
+
+  @include respond-min($bp-xlarge) {
+    width: 932px;
+  }
+
+  .owl-pagination {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.framing-state-navigation {
+
+  a {
+    height: 60px;
+
+    @include respond-min($bp-small) {
+      height: auto;
+    }
+  }
+
+  @include respond-min($bp-medium) {
+    font-size: $font-size-h3;
+    line-height: $line-height-h3;
+  }
+
+  @include respond-min($bp-large) {
+    font-size: $font-size-h2;
+    line-height: $line-height-h2;
+  }
+}
+
+.fancybox-inner {
+
+  .owl-controls {
+    position: relative;
+  }
+
+  .owl-buttons {
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    z-index: 1050;
+  }
+
+  .owl-pagination {
+    position: relative;
+    z-index: 1250;
+  }
+
+  .owl-prev,
+  .owl-next {
+    position: relative;
+    left: auto;
+    right: auto;
+  }
+
+  .owl-prev {
+    float: left;
+  }
+
+  .owl-next {
+    float: right;
+  }
+}
+
+.framing-studio-option {
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: ($baseline / 2);
+  }
+}
