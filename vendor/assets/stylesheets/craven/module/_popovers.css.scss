@@ -1,20 +1,20 @@
-/* ==========================================================================
-   Popovers
-   ========================================================================== */
+//
+// Popovers
+// ----------------------------------------------
 
-/*
-   Popover base styles
-   ========================================================================== */
+
+// Popover base styles
+// ----------------------------------------------
 .popover {
   position: absolute;
+  z-index: $zindex-popover;
   display: none;
+  margin-top: $popover-carat-width;
+  margin-right: 10px;
   border: $popover-border-width solid $popover-border-color;
   border-radius: $popover-border-radius;
   background-color: $popover-bg-color;
   box-shadow: $default-box-shadow;
-  z-index: $zindex-popover;
-  margin-top: $popover-carat-width;
-  margin-right: 10px;
 
   @include respond-min($bp-medium) {
     width: 410px;
@@ -29,19 +29,19 @@
   padding: $popover-padding;
 }
 
-/*
-   Popover arrow
-   ========================================================================== */
+
+// Popover arrow
+// ----------------------------------------------
 .popover:before,
 .popover:after {
-  content: " ";
   position: absolute;
+  left: 20px;
+  bottom: 100%;
   width: 0;
   height: 0;
   border-style: solid;
   border-color: transparent;
-  bottom: 100%;
-  left: 20px;
+  content: " ";
 }
 
 .popover:before {
@@ -56,9 +56,9 @@
   border-width: $popover-carat-width;
 }
 
-/*
-   Popover link/button
-   ========================================================================== */
+
+// Popover link/button
+// ----------------------------------------------
 .has-popover {
   display: block;
   padding: $padding-large-vertical 0;

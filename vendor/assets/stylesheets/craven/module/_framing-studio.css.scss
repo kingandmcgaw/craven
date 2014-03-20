@@ -1,25 +1,110 @@
-/* ==========================================================================
-   Framing studio
-   ========================================================================== */
+//
+// Framing studio
+// ----------------------------------------------
 
+
+// General display
+// ----------------------------------------------
+.framing-section {
+  display: none;
+}
+
+.fancybox-inner {
+  .framing-section {
+    display: block;
+  }
+}
+
+.framing-section {
+
+  @include respond-min($bp-medium) {
+    width: 700px;
+  }
+
+  @include respond-min($bp-large) {
+    width: 860px;
+  }
+
+  @include respond-min($bp-xlarge) {
+    width: 932px;
+  }
+
+  .owl-pagination {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.fancybox-inner {
+
+  .owl-controls {
+    position: relative;
+  }
+
+  .owl-buttons {
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    z-index: 1050;
+  }
+
+  .owl-pagination {
+    position: relative;
+    z-index: 1250;
+  }
+
+  .owl-prev,
+  .owl-next {
+    position: relative;
+    left: auto;
+    right: auto;
+  }
+
+  .owl-prev {
+    float: left;
+  }
+
+  .owl-next {
+    float: right;
+  }
+}
+
+
+// Framing navigation tabs
+// ----------------------------------------------
 .framing-state-navigation {
-  overflow: hidden;
   position: relative;
   top: 1px;
-  list-style: none;
+  overflow: hidden;
   margin: 0;
+  list-style: none;
+
+  @include respond-min($bp-medium) {
+    font-size: $font-size-h3;
+    line-height: $line-height-h3;
+  }
+
+  @include respond-min($bp-large) {
+    font-size: $font-size-h2;
+    line-height: $line-height-h2;
+  }
 
   > li {
     @extend .h3;
-    margin: 0;
     float: left;
     width: 50%;
+    margin: 0;
     text-align: center;
 
     a {
       display: block;
+      height: 60px;
       padding: $padding-large-vertical $padding-large-horizontal;
       color: $brand-primary !important;
+
+      @include respond-min($bp-small) {
+        height: auto;
+      }
     }
   }
 
@@ -32,6 +117,9 @@
   }
 }
 
+
+// Frame thumbnails
+// ----------------------------------------------
 .frame-thumbnail {
   padding: 10px;
   text-align: center;
@@ -72,6 +160,9 @@
   }
 }
 
+
+// Mount selector
+// ----------------------------------------------
 .mount-thumbnails li {
   @include inline-block;
   position: relative;
@@ -93,100 +184,30 @@
   font-size: $font-size-small;
 }
 
-.framing-section {
-  display: none;
-}
-
-.fancybox-inner {
-  .framing-section {
-    display: block;
-  }
-}
-
-.framing-studio-option .popover {
-
-  @include respond-min($bp-large) {
-    width: 410px;
-  }
-}
-
-.framing-section {
-
-  @include respond-min($bp-medium) {
-    width: 700px;
-  }
-
-  @include respond-min($bp-large) {
-    width: 860px;
-  }
-
-  @include respond-min($bp-xlarge) {
-    width: 932px;
-  }
-
-  .owl-pagination {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-
-.framing-state-navigation {
-
-  a {
-    height: 60px;
-
-    @include respond-min($bp-small) {
-      height: auto;
-    }
-  }
-
-  @include respond-min($bp-medium) {
-    font-size: $font-size-h3;
-    line-height: $line-height-h3;
-  }
-
-  @include respond-min($bp-large) {
-    font-size: $font-size-h2;
-    line-height: $line-height-h2;
-  }
-}
-
-.fancybox-inner {
-
-  .owl-controls {
-    position: relative;
-  }
-
-  .owl-buttons {
-    position: absolute;
-    top: -10px;
-    width: 100%;
-    z-index: 1050;
-  }
-
-  .owl-pagination {
-    position: relative;
-    z-index: 1250;
-  }
-
-  .owl-prev,
-  .owl-next {
-    position: relative;
-    left: auto;
-    right: auto;
-  }
-
-  .owl-prev {
-    float: left;
-  }
-
-  .owl-next {
-    float: right;
-  }
-}
-
 .framing-studio-option {
+  float: left;
+  margin-right: 20px;
+
+  .has-popover {
+    margin-right: 20px;
+  }
+
   @media only screen and (max-width: $bp-medium) {
     margin-bottom: ($baseline / 2);
+  }
+}
+
+.framing-studio-header {
+  @include row;
+  margin-bottom: $baseline;
+  border-bottom: 1px solid $keyline-color;
+}
+
+
+.framing-suggestions,
+.framing-grid-options-list {
+
+  .current .text-muted {
+    color: #fff;
   }
 }

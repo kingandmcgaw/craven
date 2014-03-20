@@ -1,6 +1,10 @@
-/**
- * Product page layout
- */
+//
+// Product page
+// ----------------------------------------------
+
+
+// Product page layout
+// ----------------------------------------------
 .product-header {
   margin-bottom: $baseline;
 
@@ -19,10 +23,8 @@
 }
 
 
-
-/**
- * Product image
- */
+// Product image
+// ----------------------------------------------
 .product-image {
   @include span-columns(10);
   @include shift(2);
@@ -56,10 +58,8 @@
 }
 
 
-
-/**
- * Alternate/detail views
- */
+// Alternate/detail views
+// ----------------------------------------------
 .product-alt-views {
   @include span-columns(2);
   @include shift(-12);
@@ -76,9 +76,9 @@
   }
 }
 
-/**
- * Product summary
- */
+
+// Product summary
+// ----------------------------------------------
 .product-image-description {
   text-align: left;
 }
@@ -204,9 +204,9 @@
   }
 }
 
-/**
- * Product type selectors
- */
+
+// Product type selectors
+// ----------------------------------------------
 .product-types-container {
   @include row;
   padding-top: 5px;
@@ -286,38 +286,8 @@
 }
 
 
-
-/**
- * Framing studio
- */
-.framing-studio-header {
-  @include row;
-  margin-bottom: $baseline;
-  border-bottom: 1px solid $keyline-color;
-}
-
-.framing-studio-option {
-  float: left;
-  margin-right: 20px;
-
-  .has-popover {
-    margin-right: 20px;
-  }
-}
-
-.framing-suggestions,
-.framing-grid-options-list {
-
-  .current .text-muted {
-    color: #fff;
-  }
-}
-
-
-
-/**
- * Add to cart button
- */
+// Add to cart button
+// ----------------------------------------------
 .add-to-cart {
   width: 100%;
   margin-bottom: ($baseline / 2);
@@ -341,10 +311,8 @@
 }
 
 
-
-/**
- * Save for later
- */
+// Save for later
+// ----------------------------------------------
 .save-for-later {
 
   .icon-heart {
@@ -359,10 +327,8 @@
 }
 
 
-
-/**
- * Product size selectors
- */
+// Product size selectors
+// ----------------------------------------------
 .product-size-options-container {
 
   .product-size {
@@ -413,9 +379,8 @@
 }
 
 
-/**
- * Framing toggle
- */
+// Framing toggle
+// ----------------------------------------------
 .framing-toggle {
   border-bottom: 1px solid $keyline-color;
   margin-bottom: ($baseline / 2);
@@ -437,7 +402,6 @@
     }
   }
 }
-
 
 .add-a-frame-section {
   display: block;
@@ -546,6 +510,7 @@
 }
 
 // USP row
+// ----------------------------------------------
 .usp-row {
   display: block;
 
