@@ -9,14 +9,22 @@
 
   .readmore-crop {
     overflow: hidden;
+
+    p {
+      margin: 0;
+    }
+
+    .readmore-expanded & {
+      margin: $margin-default;
+    }
   }
 
   .readmore-crop-60 {
     max-height: 60px;
   }
 
-  .readmore-crop-90 {
-    max-height: 90px;
+  .readmore-crop-80 {
+    max-height: 80px;
   }
 }
 
