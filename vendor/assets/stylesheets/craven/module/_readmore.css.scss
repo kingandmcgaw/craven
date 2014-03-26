@@ -13,10 +13,10 @@
     p {
       margin: 0;
     }
+  }
 
-    .readmore-expanded & {
-      margin: $margin-default;
-    }
+  .readmore-expanded p {
+    margin: $margin-default;
   }
 
   .readmore-crop-60 {
