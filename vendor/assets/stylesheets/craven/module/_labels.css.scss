@@ -69,7 +69,6 @@ a.badge:focus {
   background-color: #1a1a1a;
 }
 
-.label-facets,
 .label.current {
   margin-bottom: 4px;
   background-color: $brand-primary;
@@ -108,4 +107,23 @@ a.badge:focus {
 .label-info,
 .badge-info {
   background-color: #3a87ad;
+}
+
+.label-facets {
+  background-color: $gray-lighter;
+  text-shadow: none;
+  font-weight: normal;
+  color: $text-color;
+  border: 1px solid $keyline-color;
+
+  a {
+    color: $link-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $link-color-hover;
+      text-decoration: $link-text-decoration-hover;
+    }
+  }
 }
