@@ -57,6 +57,12 @@
   cursor: pointer;
 }
 
+.product-wrapper {
+  @include linear-gradient(#fff 50%, $gray-lighter);
+  border-bottom: 1px solid $keyline-color;
+  margin-bottom: $baseline;
+}
+
 
 // Alternate/detail views
 // ----------------------------------------------
