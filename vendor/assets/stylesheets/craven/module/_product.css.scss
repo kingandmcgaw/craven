@@ -103,8 +103,7 @@
 .product-summary-module {
   @include clearfix;
 
-  ul,
-  p {
+  .product-summary-data {
     margin-bottom: 0;
     font-size: $font-size-small;
   }
@@ -134,8 +133,11 @@
   border-radius: 3px;
   padding: 3px 5px;
   font-size: $font-size-small;
+  color: #fff;
 
-  a {
+  &:hover,
+  &:active,
+  &:focus {
     color: #fff;
   }
 }
@@ -446,18 +448,12 @@
   }
 }
 
-.product-sizes {
-  margin-bottom: ($baseline / 2);
-  padding-bottom: ($baseline / 2);
-  border-bottom: 1px solid $keyline-color;
+.product-size-popover {
+  width: 210px;
+  z-index: 1450;
 
-  .product-size-popover {
-    width: 210px;
-    z-index: 1450;
-
-    @include respond-min($bp-large) {
-      width: 250px;
-    }
+  @include respond-min($bp-large) {
+    width: 250px;
   }
 }
 
