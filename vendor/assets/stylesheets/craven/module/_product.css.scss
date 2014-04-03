@@ -100,12 +100,12 @@
   }
 }
 
-.selected-product-summary-header {
+.product-summary-header {
   @include row;
   margin-bottom: ($baseline / 2);
 }
 
-.selected-product-summary-control {
+.product-summary-control {
   background: $brand-primary;
   border-radius: 3px;
   padding: 3px 5px;
