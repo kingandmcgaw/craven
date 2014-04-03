@@ -100,9 +100,30 @@
   }
 }
 
+.product-summary-module {
+  @include clearfix;
+
+  ul,
+  p {
+    margin-bottom: 0;
+    font-size: $font-size-small;
+    line-height: 1.4;
+  }
+}
+
 .product-summary-header {
-  @include row;
-  margin-bottom: ($baseline / 2);
+  margin-bottom: 5px;
+}
+
+.product-summary-details {
+  float: left;
+  width: 80%;
+}
+
+.product-summary-price {
+  float: right;
+  width: 20%;
+  text-align: right;
 }
 
 .product-summary-control {
@@ -137,7 +158,11 @@
 }
 
 .product-summary-inner {
-  @extend .well;
+  min-height: 20px;
+  margin-bottom: $baseline;
+  border: 1px solid $keyline-color;
+  border-radius: 4px;
+  background: #fff;
   padding: $baseline 15px;
 }
 
@@ -397,26 +422,14 @@
 
 // Framing toggle
 // ----------------------------------------------
-.framing-toggle {
-  border-bottom: 1px solid $keyline-color;
-  margin-bottom: ($baseline / 2);
-  padding: 0 0 ($baseline / 2) 0;
-  line-height: 100%;
+.frame-addition-price {
+  font-weight: bold;
+}
 
-  .framing-toggle-description {
-
-    .frame-title {
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    img {
-      width: 30px;
-      height: 30px;
-      float: left;
-      margin-right: 10px;
-    }
-  }
+.frame-remove {
+  font-size: $font-size-small;
+  line-height: 1.4;
+  color: $text-muted;
 }
 
 .add-a-frame-section {
@@ -480,11 +493,6 @@
 
 .product-summary-inner {
 
-  .product-summary-description {
-    float: left;
-    width: 80%;
-  }
-
   .product-summary-price {
     float: left;
     width: 20%;
@@ -508,7 +516,7 @@
   }
 
   .current {
-    background: $gray-lighter;
+    background: #fff;
     border: 1px solid $keyline-color;
     border-bottom: 0;
     border-radius: 5px 5px 0 0;
