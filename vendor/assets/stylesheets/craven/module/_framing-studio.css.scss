@@ -164,6 +164,11 @@
   .frame-thumbnail {
     float: left;
     line-height: 1.2em;
+    width: 135px;
+  }
+
+  .frame-title {
+    overflow: hidden;
   }
 
   .frame-thumbnail-image-wrapper {
@@ -226,12 +231,16 @@
 
 .framing-suggestions-row-container {
   display: block;
+  border-bottom: 1px solid $keyline-color;
+  margin-bottom: $baseline;
+  padding-bottom: $baseline / 2;
 
   .framing-studio-header {
     @include respond-min($bp-small) {
       @include span-columns(3);
       @include shift(0);
     }
+    border: none;
   }
 
   .framing-suggestions-row {
