@@ -160,6 +160,21 @@
   }
 }
 
+.framing-suggestions-row {
+  .frame-thumbnail {
+    float: left;
+    line-height: 1.2em;
+  }
+
+  .frame-thumbnail-image-wrapper {
+    height: 110px;
+    line-height: 110px;
+
+    img {
+      max-height: 110px;
+    }
+  }
+}
 
 // Mount selector
 // ----------------------------------------------
@@ -203,11 +218,26 @@
   border-bottom: 1px solid $keyline-color;
 }
 
-
-.framing-suggestions,
-.framing-grid-options-list {
-
+.framing-suggestions, .framing-grid-options-list {
   .current .text-muted {
     color: #fff;
+  }
+}
+
+.framing-suggestions-row-container {
+  display: block;
+
+  .framing-studio-header {
+    @include respond-min($bp-small) {
+      @include span-columns(3);
+      @include shift(0);
+    }
+  }
+
+  .framing-suggestions-row {
+    @include respond-min($bp-small) {
+      @include span-columns(9);
+      @include shift(0);
+    }
   }
 }
