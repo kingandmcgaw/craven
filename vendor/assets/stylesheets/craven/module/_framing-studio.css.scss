@@ -133,8 +133,7 @@
   }
 
   &.current {
-    background: $brand-primary;
-    color: #fff;
+    background: $gray-light;
 
     .muted {
       color: #fff;
@@ -177,6 +176,25 @@
 
     img {
       max-height: 110px;
+
+    }
+
+    .frame-mockup {
+      display: block;
+      border: 1px solid $gray;
+      margin: 1px auto 9px;
+      position: relative;
+
+      &:hover {
+        background-color: $gray;
+      }
+
+      span {
+        position: absolute;
+        display: block;
+        border: 1px solid #e2e2e2;
+        background-color: $white;
+      }
     }
   }
 }
@@ -220,6 +238,7 @@
 .framing-studio-header {
   @include row;
   margin-bottom: $baseline;
+  padding-top: $baseline / 2;
   border-bottom: 1px solid $keyline-color;
 }
 
@@ -230,10 +249,10 @@
 }
 
 .framing-suggestions-row-container {
-  display: block;
   border-bottom: 1px solid $keyline-color;
   margin-bottom: $baseline;
   padding-bottom: $baseline / 2;
+  min-height: 190px;
 
   .framing-studio-header {
     @include respond-min($bp-small) {
@@ -248,5 +267,9 @@
       @include span-columns(9);
       @include shift(0);
     }
+  }
+
+  .custom-frame-thumb {
+    border: 1px solid $keyline-color;
   }
 }
