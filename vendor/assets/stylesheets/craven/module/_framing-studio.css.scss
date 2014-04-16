@@ -178,24 +178,6 @@
       max-height: 110px;
 
     }
-
-    .frame-mockup {
-      display: block;
-      border: 1px solid $gray;
-      margin: 1px auto 9px;
-      position: relative;
-
-      &:hover {
-        background-color: $gray;
-      }
-
-      span {
-        position: absolute;
-        display: block;
-        border: 1px solid #e2e2e2;
-        background-color: $white;
-      }
-    }
   }
 }
 
@@ -252,7 +234,7 @@
   border-bottom: 1px solid $keyline-color;
   margin-bottom: $baseline;
   padding-bottom: $baseline / 2;
-  min-height: 190px;
+  overflow: auto;
 
   .framing-studio-header {
     @include respond-min($bp-small) {
@@ -269,7 +251,12 @@
     }
   }
 
-  .custom-frame-thumb {
-    border: 1px solid $keyline-color;
+  .custom-frame {
+    display: block;
+    width: 40px;
+    height: 35px;
+    background: image-url("icons/tools.png") 0 0 no-repeat;
+    text-indent: -9999px;
+    margin: 25px auto 10px;
   }
 }
