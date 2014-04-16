@@ -2,7 +2,6 @@
 // Framing studio
 // ----------------------------------------------
 
-
 // General display
 // ----------------------------------------------
 .framing-section {
@@ -16,7 +15,6 @@
 }
 
 .framing-section {
-
   @include respond-min($bp-medium) {
     width: 700px;
   }
@@ -36,7 +34,6 @@
 }
 
 .fancybox-inner {
-
   .owl-controls {
     position: relative;
   }
@@ -68,55 +65,6 @@
     float: right;
   }
 }
-
-
-// Framing navigation tabs
-// ----------------------------------------------
-.framing-state-navigation {
-  position: relative;
-  top: 1px;
-  overflow: hidden;
-  margin: 0;
-  list-style: none;
-
-  @include respond-min($bp-medium) {
-    font-size: $font-size-h3;
-    line-height: $line-height-h3;
-  }
-
-  @include respond-min($bp-large) {
-    font-size: $font-size-h2;
-    line-height: $line-height-h2;
-  }
-
-  > li {
-    @extend .h3;
-    float: left;
-    width: 50%;
-    margin: 0;
-    text-align: center;
-
-    a {
-      display: block;
-      height: 60px;
-      padding: $padding-large-vertical $padding-large-horizontal;
-      color: $brand-primary !important;
-
-      @include respond-min($bp-small) {
-        height: auto;
-      }
-    }
-  }
-
-  .current {
-    background: $gray-lighter;
-    border: 1px solid $keyline-color;
-    border-bottom: 0;
-    border-radius: $border-radius-base $border-radius-base 0 0;
-    color: $text-color !important;
-  }
-}
-
 
 // Frame thumbnails
 // ----------------------------------------------
@@ -163,7 +111,6 @@
   .frame-thumbnail {
     float: left;
     line-height: 1.2em;
-    width: 135px;
   }
 
   .frame-title {
@@ -172,11 +119,12 @@
 
   .frame-thumbnail-image-wrapper {
     height: 110px;
+    width: 110px;
     line-height: 110px;
 
     img {
       max-height: 110px;
-
+      max-width: 110px;
     }
   }
 }
@@ -224,30 +172,26 @@
   border-bottom: 1px solid $keyline-color;
 }
 
-.framing-suggestions, .framing-grid-options-list {
-  .current .text-muted {
-    color: #fff;
-  }
+.framing-grid-options-list {
+  margin-top: 20px;
 }
 
-.framing-suggestions-row-container {
+.framing-suggestions-container {
   border-bottom: 1px solid $keyline-color;
   margin-bottom: $baseline;
   padding-bottom: $baseline / 2;
   overflow: auto;
 
   .framing-studio-header {
-    @include respond-min($bp-small) {
+    @include respond-min($bp-medium) {
       @include span-columns(3);
-      @include shift(0);
     }
     border: none;
   }
 
   .framing-suggestions-row {
-    @include respond-min($bp-small) {
+    @include respond-min($bp-medium) {
       @include span-columns(9);
-      @include shift(0);
     }
   }
 
