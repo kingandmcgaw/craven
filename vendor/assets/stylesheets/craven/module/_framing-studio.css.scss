@@ -177,10 +177,7 @@
 }
 
 .framing-suggestions-container {
-  border-bottom: 1px solid $keyline-color;
-  margin-bottom: $baseline;
   padding-bottom: $baseline / 2;
-  overflow: auto;
 
   .framing-studio-header {
     @include respond-min($bp-medium) {
