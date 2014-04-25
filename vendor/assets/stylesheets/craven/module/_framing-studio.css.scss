@@ -108,9 +108,15 @@
 }
 
 .framing-suggestions-row {
+
   .frame-thumbnail {
     float: left;
+    width: 50%;
     line-height: 1.2em;
+
+    @include respond-min($bp-small) {
+      width: 20%;
+    }
   }
 
   .frame-title {
@@ -119,12 +125,13 @@
 
   .frame-thumbnail-image-wrapper {
     height: 110px;
-    width: 110px;
+    max-width: 110px;
     line-height: 110px;
+    margin: 0 auto 5px;
 
     img {
       max-height: 110px;
-      max-width: 110px;
+      // max-width: 110px;
     }
   }
 }
