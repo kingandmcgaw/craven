@@ -19,7 +19,7 @@
 
 .product-body {
   @include clearfix;
-  margin-bottom: ($baseline * 2);
+  margin-bottom: $baseline;
 }
 
 
