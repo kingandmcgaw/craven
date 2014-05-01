@@ -106,6 +106,7 @@
 .loading {
   padding: 5px;
   background: image-url("misc/ajax.gif") center center no-repeat;
+  min-height: 16px;
 
   img {
     opacity: 0.25;
