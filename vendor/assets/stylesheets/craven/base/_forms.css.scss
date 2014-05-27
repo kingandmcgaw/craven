@@ -1,6 +1,9 @@
-/**
- * Basic form styles
- */
+//
+// Form styles
+// ==============================================
+
+// Basic styles
+// ==============================================
 form {
   margin-bottom: $baseline;
 }
@@ -9,6 +12,20 @@ fieldset {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+legend {
+  @extend .h2;
+}
+
+label {
+  line-height: 30px;
+}
+
+select {
+  -webkit-appearance: menulist-button;
+  height: 30px;
+  line-height: 30px;
 }
 
 input,
@@ -37,7 +54,7 @@ input[type="week"] {
   @include box-sizing(border-box);
   width: 100%;
   max-width: 410px;
-  border-radius: 0;
+  height: 30px;
   -webkit-appearance: none;
   background-color: white;
   border: 1px solid $hr-border;
@@ -61,10 +78,8 @@ textarea {
 }
 
 
-
-/**
- * Form layouts
- */
+// Basic layout
+// ==============================================
 .control-group {
   margin-bottom: $baseline;
 
@@ -74,10 +89,32 @@ textarea {
   }
 }
 
-.checkbox {
-  margin-bottom: $baseline;
+.checkbox,
+.radio {
+
+  label {
+    line-height: $line-height-base;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    float: left;
+    margin: 3px 0 0 -18px;
+  }
 }
 
+.help-block {
+  margin: 0;
+  color: $text-muted;
+}
+
+.input-small {
+  width: 40% !important;
+}
+
+
+// Inline form
+// ==============================================
 .form-inline {
 
   .control-group,
@@ -93,7 +130,17 @@ textarea {
   }
 }
 
+
+// Horizontal forms
+// ==============================================
 .form-horizontal {
+
+  legend {
+    @include respond-min($bp-medium) {
+      @include span-columns(9);
+      @include shift(3);
+    }
+  }
 
   .control-group {
     @include row;
@@ -119,8 +166,8 @@ textarea {
   }
 
   .form-actions,
+  .radio,
   .checkbox {
-    margin-bottom: $baseline;
 
     @include respond-min($bp-medium) {
       @include span-columns(9);
@@ -133,6 +180,9 @@ textarea {
   }
 }
 
+
+// Appended button form
+// ==============================================
 .form-append {
 
   .append-row {
@@ -158,10 +208,8 @@ textarea {
 }
 
 
-
-/**
- * Search form
- */
+// Search form
+// ==============================================
 .search-form {
   // Fixes alignment problems in the search form when typeahead kicks in
   .form-append {
