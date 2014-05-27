@@ -25,6 +25,7 @@ label {
 select {
   -webkit-appearance: menulist-button;
   width: 100%;
+  max-width: 410px;
   height: 30px;
   line-height: 30px;
   padding: 4px;
@@ -56,6 +57,7 @@ input[type="url"],
 input[type="week"] {
   @include box-sizing(border-box);
   width: 100%;
+  max-width: 410px;
   height: 30px;
   -webkit-appearance: none;
   background-color: white;
