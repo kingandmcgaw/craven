@@ -26,6 +26,8 @@ select {
   -webkit-appearance: menulist-button;
   height: 30px;
   line-height: 30px;
+  padding: 4px;
+  border: 1px solid $keyline-color;
 }
 
 input,
@@ -98,8 +100,10 @@ textarea {
 
   input[type="radio"],
   input[type="checkbox"] {
-    float: left;
-    margin: 3px 0 0 -18px;
+    @include respond-min($bp-medium) {
+      float: left;
+      margin: 3px 0 0 -18px;
+    }
   }
 }
 
