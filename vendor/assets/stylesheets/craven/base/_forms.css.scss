@@ -55,7 +55,6 @@ input[type="url"],
 input[type="week"] {
   @include box-sizing(border-box);
   width: 100%;
-  max-width: 410px;
   height: 30px;
   -webkit-appearance: none;
   background-color: white;
