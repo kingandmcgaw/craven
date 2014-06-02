@@ -16,9 +16,6 @@ fieldset {
 
 legend {
   @extend .h2;
-}
-
-label {
   line-height: 30px;
 }
 
@@ -145,6 +142,7 @@ textarea {
     @include respond-min($bp-medium) {
       @include span-columns(9);
       @include shift(3);
+      clear: both;
     }
   }
 
