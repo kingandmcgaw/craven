@@ -27,6 +27,7 @@ select {
   line-height: 30px;
   padding: 4px;
   border: 1px solid $keyline-color;
+  border-radius: 3px;
 }
 
 input,
@@ -54,7 +55,7 @@ input[type="url"],
 input[type="week"] {
   @include box-sizing(border-box);
   width: 100%;
-  max-width: 410px;
+  max-width: 315px;
   height: 30px;
   -webkit-appearance: none;
   background-color: white;
@@ -62,6 +63,7 @@ input[type="week"] {
   padding: 5px;
   text-align: left;
   vertical-align: middle;
+  border-radius: 3px;
 }
 
 input::-webkit-input-placeholder,
