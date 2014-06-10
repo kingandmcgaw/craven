@@ -197,8 +197,7 @@ textarea {
       position: relative;
       width: auto;
       border-right: 0;
-      border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
+      border-radius: 3px 0 0 3px;
     }
 
     button,
