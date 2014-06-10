@@ -104,14 +104,25 @@
 // Fades image when it's parent class has a class of .loading
 // and adds a loading gif to the background
 .loading {
-  padding: 5px;
   background: image-url("misc/ajax.gif") center center no-repeat;
   min-height: 16px;
+  min-width: 16px;
 
   img {
     opacity: 0.25;
   }
 }
+
+.loading-right {
+  background: image-url("misc/ajax.gif") right center no-repeat;
+  min-height: 16px;
+  min-width: 16px;
+
+  * {
+    display: none;
+  }
+}
+
 
 // Only display content to screen readers
 // See: http://a11yproject.com/posts/how-to-hide-content/
