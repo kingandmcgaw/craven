@@ -111,15 +111,13 @@
   img {
     opacity: 0.25;
   }
-}
 
-.loading-right {
-  background: image-url("misc/ajax.gif") right center no-repeat;
-  min-height: 16px;
-  min-width: 16px;
+  &.please-wait {
+    background-position: right center;
 
-  * {
-    display: none;
+    * {
+      display: none;
+    }
   }
 }
 
