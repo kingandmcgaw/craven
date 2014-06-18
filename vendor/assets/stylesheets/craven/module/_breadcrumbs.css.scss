@@ -10,7 +10,7 @@
   background: none;
 
   > li {
-    @include inline-block;
+    display: inline-block;
 
     > .divider {
       padding: 0 5px;

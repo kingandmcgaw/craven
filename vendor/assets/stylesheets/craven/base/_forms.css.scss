@@ -124,13 +124,13 @@ textarea {
 
   .control-group,
   .checkbox {
-    @include inline-block;
+    display: inline-block;
     margin-right: 5px;
 
     label,
     input,
     button {
-      @include inline-block;
+      display: inline-block;
     }
   }
 }
@@ -197,7 +197,7 @@ textarea {
     @include row;
 
     input {
-      @include inline-block;
+      display: inline-block;
       position: relative;
       width: auto;
       border-right: 0;
@@ -206,7 +206,7 @@ textarea {
 
     button,
     .btn {
-      @include inline-block;
+      display: inline-block;
       position: relative;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
@@ -227,7 +227,7 @@ textarea {
     }
 
     button {
-      @include inline-block;
+      display: inline-block;
       position: relative;
       top: 0;
       height: 30px;
@@ -242,7 +242,7 @@ textarea {
   .form-append {
 
     .twitter-typeahead {
-      @include inline-block;
+      display: inline-block;
       position: relative;
       width: 60%;
       top: 0;

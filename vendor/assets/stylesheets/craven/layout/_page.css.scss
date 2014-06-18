@@ -7,7 +7,6 @@
 
   @include respond-min($bp-medium) {
     @include span-columns(9);
-    @include shift(3);
   }
 }
 
@@ -15,7 +14,6 @@
 
   @include respond-min($bp-medium) {
     @include span-columns(3);
-    @include shift(-12);
   }
 }
 
