@@ -104,7 +104,9 @@
 // Fades image when it's parent class has a class of .loading
 // and adds a loading gif to the background
 .loading {
-  background: image-url("misc/ajax.gif") center center no-repeat;
+  background-image: image-url("misc/ajax.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
   min-height: 16px;
   min-width: 16px;
 
