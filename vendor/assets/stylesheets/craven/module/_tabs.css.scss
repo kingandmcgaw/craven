@@ -15,7 +15,7 @@
   }
 
   a {
-    @include inline-block;
+    display: inline-block;
     color: $font-family-serif;
     padding: 5px 10px;
     border-right: 1px solid transparent;

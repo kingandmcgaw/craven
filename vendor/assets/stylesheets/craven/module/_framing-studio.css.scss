@@ -139,7 +139,7 @@
 // Mount selector
 // ----------------------------------------------
 .mount-thumbnails li {
-  @include inline-block;
+  display: inline-block;
   position: relative;
   margin: 0 2px 4px;
 }

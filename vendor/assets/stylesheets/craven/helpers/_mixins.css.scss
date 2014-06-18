@@ -81,13 +81,3 @@ $lte-ie8: false !default;
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-
-
-/**
- * Inline-block as no longer supported by bourbon
- */
-@mixin inline-block {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
