@@ -1,6 +1,6 @@
-/* ==========================================================================
-   Modals
-   ========================================================================== */
+//
+// Modals
+// ==============================================
 
 .modal {
   padding: 5px;
@@ -19,9 +19,10 @@
 
 #cart-modal .modal-footer {
   @include row;
+  text-align: center;
 
-  @include media($mobile) {
-    text-align: center;
+  @include respond-min($bp-small) {
+    text-align: left;
   }
 }
 
@@ -31,10 +32,9 @@
 }
 
 .cart-security {
-  float: left;
 
-  @include media($mobile) {
-    float: none;
+  @include respond-min($bp-small) {
+    float: left;
   }
 }
 
@@ -43,11 +43,10 @@
 }
 
 .cart-actions {
-  margin-top: 5px;
+  margin: 0 0 $baseline;
 
-  @include media($mobile) {
-    float: none;
-    margin: 0 0 $baseline;
+  @include respond-min($bp-small) {
+    margin: 5px 0 0;
   }
 }
 
