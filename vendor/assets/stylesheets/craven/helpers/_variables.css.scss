@@ -28,7 +28,7 @@ $brand-red-dark: #a61217;
 // ==============================================
 $body-bg: #fff;
 $text-color: $black;
-
+$text-muted: $gray-dark;
 
 // Links
 // ==============================================
@@ -87,6 +87,9 @@ $headings-link-color-hover: $headings-link-color;
 $headings-link-text-decoration: none;
 $headings-link-text-decoration-hover: underline;
 
+$headings-small-color: $text-muted;
+
+
 // Padding
 // ==============================================
 $padding-base-vertical: 6px;
@@ -130,19 +133,6 @@ $state-info-border: darken(adjust-hue($state-info-bg, -10), 7%);
 $keyline-color: #ccc;
 $hr-border: $keyline-color;
 $default-box-shadow: 1px 1px 7px rgba(0,0,0,0.15);
-$text-muted: $gray-dark;
-$headings-small-color: $text-muted;
-
-
-// Popovers
-// ==============================================
-$popover-padding: 6px 12px;
-$popover-border-width: 1px;
-$popover-border-color: $keyline-color;
-$popover-border-radius: $border-radius-base;
-$popover-bg-color: #fff;
-$popover-carat-width: 10px;
-$popover-z-index: 1010;
 
 
 // Breakpoints

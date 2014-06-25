@@ -7,13 +7,13 @@
 // ----------------------------------------------
 .popover {
   position: absolute;
-  z-index: $popover-z-index;
+  z-index: 1050;
   display: none;
-  margin-top: $popover-carat-width;
+  margin-top: 10px;
   margin-right: 10px;
-  border: $popover-border-width solid $popover-border-color;
-  border-radius: $popover-border-radius;
-  background-color: $popover-bg-color;
+  border: 1px solid $keyline-color;
+  border-radius: $border-radius-base;
+  background-color: #fff;
   box-shadow: $default-box-shadow;
 
   @include respond-min($bp-medium) {
@@ -26,7 +26,7 @@
 }
 
 .popover-body {
-  padding: $popover-padding;
+  padding: $padding-base-vertical $padding-base-horizontal;
 }
 
 
@@ -45,15 +45,15 @@
 }
 
 .popover:before {
-  margin-left: -($popover-carat-width + $popover-border-width);
-  border-bottom-color: $popover-border-color;
-  border-width: ($popover-carat-width + $popover-border-width);
+  margin-left: -11px;
+  border-bottom-color: $keyline-color;
+  border-width: 11px;
 }
 
 .popover:after {
-  margin-left: -$popover-carat-width;
-  border-bottom-color: $popover-bg-color;
-  border-width: $popover-carat-width;
+  margin-left: -10px;
+  border-bottom-color: #fff;
+  border-width: 10px;
 }
 
 
