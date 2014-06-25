@@ -1,7 +1,9 @@
-/* ==========================================================================
-   Buttons
-   ========================================================================== */
+//
+// Buttons
+// ==============================================
 
+// Default buttons
+// ==============================================
 button,
 .btn,
 input[type="reset"],
@@ -20,6 +22,23 @@ input[type="button"] {
   }
 }
 
+a.btn:hover,
+a.btn:active,
+a.btn:focus {
+  text-decoration: none;
+}
+
+
+// Large buttons
+// ==============================================
+.btn-large {
+  padding: 7px 10px;
+  font-size: 18px;
+}
+
+
+// Primary buttons
+// ==============================================
 .btn-primary {
   @include button($brand-primary);
   font-weight: normal;
@@ -31,6 +50,9 @@ input[type="button"] {
   }
 }
 
+
+// Info buttons
+// ==============================================
 .btn-info {
   @include button($brand-info);
 
@@ -41,6 +63,9 @@ input[type="button"] {
   }
 }
 
+
+// Success buttons
+// ==============================================
 .btn-success {
   @include button($brand-success);
 
@@ -51,6 +76,9 @@ input[type="button"] {
   }
 }
 
+
+// Warning buttons
+// ==============================================
 .btn-warning {
   @include button($brand-warning);
 
@@ -61,6 +89,9 @@ input[type="button"] {
   }
 }
 
+
+// Error buttons
+// ==============================================
 .btn-error {
   @include button($brand-error);
 
@@ -69,15 +100,4 @@ input[type="button"] {
   &:focus {
     color: #fff;
   }
-}
-
-a.btn:hover,
-a.btn:active,
-a.btn:focus {
-  text-decoration: none;
-}
-
-.btn-large {
-  padding: 7px 10px;
-  font-size: 18px;
 }

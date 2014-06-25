@@ -3,6 +3,7 @@
 // ==============================================
 
 // Generic page layout
+// ==============================================
 .content-area {
 
   @include respond-min($bp-medium) {
@@ -22,8 +23,8 @@
 }
 
 
-
 // Three column page layout
+// ==============================================
 .main-content {
 
   @include respond-min($bp-medium) {
@@ -49,8 +50,8 @@
 }
 
 
-
 // Inset page layout
+// ==============================================
 .page-inset {
 
   @include respond-min($bp-medium) {

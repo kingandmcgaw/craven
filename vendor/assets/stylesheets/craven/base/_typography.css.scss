@@ -1,17 +1,19 @@
-/**
- * Typography
- */
-
+//
+// Typography
+// ==============================================
 
 
 // Body styles
+// ==============================================
 body {
   font: #{$font-size-base}/#{$line-height-base} $font-family-base ;
   color: $text-color;
   background: $body-bg;
 }
 
+
 // Links
+// ==============================================
 a {
   color: $link-color;
   text-decoration: $link-text-decoration;
@@ -24,23 +26,29 @@ a {
   }
 }
 
+
 // Images
+// ==============================================
 img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
 }
 
+
 // Horizontal rules
+// ==============================================
 hr {
   clear: both;
   margin-top: $baseline;
   margin-bottom: $baseline;
   border: 0;
-  border-top: 1px solid $hr-border;
+  border-top: 1px solid $keyline-color;
 }
 
+
 // Default styles
+// ==============================================
 p {
   margin: $margin-default;
 }
@@ -56,7 +64,9 @@ p {
   font-family: $font-family-lead;
 }
 
+
 // Emphasis & misc.
+// ==============================================
 small,
 .small {
   font-size: 85%;
@@ -67,7 +77,9 @@ cite {
   font-style: normal;
 }
 
+
 // Headings
+// ==============================================
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $headings-font-family;
@@ -132,6 +144,7 @@ h6,
 
 
 // Lists
+// ==============================================
 ul {
   margin: $margin-default;
   padding: 0;

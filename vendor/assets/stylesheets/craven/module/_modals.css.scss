@@ -2,6 +2,8 @@
 // Modals
 // ==============================================
 
+// Default modal
+// ==============================================
 .modal {
   padding: 5px;
   background: #fff;
@@ -17,6 +19,9 @@
   padding-top: $baseline;
 }
 
+
+// Cart modal
+// ==============================================
 #cart-modal .modal-footer {
   @include row;
   text-align: center;

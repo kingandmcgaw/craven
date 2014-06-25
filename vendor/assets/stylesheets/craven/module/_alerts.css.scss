@@ -1,7 +1,9 @@
-/* ==========================================================================
-   Alerts
-   ========================================================================== */
+//
+// Alerts
+// ==============================================
 
+// Default alert
+// ==============================================
 .alert {
   padding: 8px 35px 8px 14px;
   margin-bottom: 20px;
@@ -32,6 +34,9 @@
   line-height: 20px;
 }
 
+
+// Success alert
+// ==============================================
 .alert-success {
   background-color: #dff0d8;
   border-color: #d6e9c6;
@@ -46,7 +51,9 @@
   color: #468847;
 }
 
-.alert-danger,
+
+// Error alert
+// ==============================================
 .alert-error {
   background-color: #f2dede;
   border-color: #eed3d7;
@@ -57,11 +64,13 @@
   }
 }
 
-.alert-danger h4,
 .alert-error h4 {
   color: #b94a48;
 }
 
+
+// Info alert
+// ==============================================
 .alert-info {
   background-color: #d9edf7;
   border-color: #bce8f1;
@@ -74,44 +83,4 @@
 
 .alert-info h4 {
   color: #3a87ad;
-}
-
-.alert-block {
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-
-.alert-block > p,
-.alert-block > ul {
-  margin-bottom: 0;
-}
-
-.alert-block p + p {
-  margin-top: 5px;
-}
-
-.close-btn {
-  float: right;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 20px;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-  color: #000000;
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.4;
-}
-
-button.close-btn {
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  -webkit-appearance: none;
 }

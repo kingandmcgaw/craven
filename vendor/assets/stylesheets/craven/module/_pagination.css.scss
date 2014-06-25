@@ -1,7 +1,9 @@
-/* ==========================================================================
-   Pagination
-   ========================================================================== */
+//
+// Pagination
+// ==============================================
 
+// Default pagination
+// ==============================================
 .pagination {
   clear: both;
   @extend .pagination-centered;
@@ -60,10 +62,16 @@
   border-radius: 0 $border-radius-base $border-radius-base 0;
 }
 
+
+// Centered pagination
+// ==============================================
 .pagination-centered {
   text-align: center;
 }
 
+
+// Right-aligned pagination
+// ==============================================
 .pagination-right {
   text-align: right;
 }

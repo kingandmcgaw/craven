@@ -1,10 +1,10 @@
 //
 // Product page
-// ----------------------------------------------
+// ==============================================
 
 
 // Product page layout
-// ----------------------------------------------
+// ==============================================
 .product-header {
   margin-bottom: $baseline;
 
@@ -24,7 +24,7 @@
 
 
 // Product image
-// ----------------------------------------------
+// ==============================================
 .product-image {
   @include span-columns(10);
   @include shift(2);
@@ -65,7 +65,7 @@
 
 
 // Alternate/detail views
-// ----------------------------------------------
+// ==============================================
 .product-alt-views {
   @include span-columns(2);
   @include shift(-12);
@@ -84,7 +84,7 @@
 
 
 // Product summary
-// ----------------------------------------------
+// ==============================================
 .product-image-description {
   text-align: left;
 }
@@ -217,7 +217,7 @@
   margin: 0;
   padding: 10px;
   background: $gray-lighter;
-  border: 1px solid $hr-border;
+  border: 1px solid $keyline-color;
   border-bottom: 0;
 
   @include respond-min($bp-medium) {
@@ -255,7 +255,7 @@
 
 
 // Add to cart button
-// ----------------------------------------------
+// ==============================================
 .add-to-cart {
   width: 100%;
   margin-bottom: ($baseline / 2);
@@ -280,7 +280,7 @@
 
 
 // Save for later
-// ----------------------------------------------
+// ==============================================
 .save-for-later {
 
   .icon-heart {
@@ -296,7 +296,7 @@
 
 
 // Product size selectors
-// ----------------------------------------------
+// ==============================================
 .product-size-options-container {
 
   .product-size {
@@ -348,7 +348,7 @@
 
 
 // Framing toggle
-// ----------------------------------------------
+// ==============================================
 .frame-addition-price {
   font-weight: bold;
 }
@@ -413,7 +413,7 @@
 
 
 // USP row
-// ----------------------------------------------
+// ==============================================
 .usp-row {
   display: block;
 

@@ -1,11 +1,11 @@
-/* ==========================================================================
-   Mixins
-   ========================================================================== */
+//
+// Mixins
+// ==============================================
 
-/**
- * Outputs styles within media queries for use in an IE specific stylesheet.
- * See http://jakearchibald.github.io/sass-ie/ for more info
- */
+// IE 8
+// ==============================================
+// Outputs styles within media queries for use in an IE specific stylesheet.
+// See http://jakearchibald.github.io/sass-ie/ for more info
 $fix-mqs: false !default;
 
 @mixin respond-min($width) {
@@ -40,9 +40,9 @@ $lte-ie8: false !default;
 }
 
 
-/**
- * Resets the margin on the last grid columns from a previous breakpoint.
- */
+// Resets the margin on the last grid columns
+// from a previous breakpoint.
+// ==============================================
 @mixin reset-omega($nth) {
   &:nth-child(#{$nth}) {
     margin-right: 2.35765%;
@@ -52,32 +52,11 @@ $lte-ie8: false !default;
   }
 }
 
-
-/**
- * Hides text that spans more than one line and applies an ellipsis to the end of it.
- */
+// Hides text that spans more than one line and
+// applies an ellipsis to the end of it.
+// ==============================================
 @mixin text-overflow {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-
-/**
- * Vertical alignment
- */
-@mixin vertical-align-center {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-@mixin vertical-align-baseline {
-  position: relative;
-  top: 100%;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
 }

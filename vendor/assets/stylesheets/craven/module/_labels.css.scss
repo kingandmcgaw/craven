@@ -1,7 +1,9 @@
-/* ==========================================================================
-   Labels
-   ========================================================================== */
+//
+// Labels
+// ==============================================
 
+// Default labels
+// ==============================================
 .label,
 .badge {
   display: inline-block;
@@ -19,15 +21,6 @@
     color: #ffffff;
     text-decoration: none;
   }
-}
-
-.label-large {
-  padding: 5px 8px;
-}
-
-.label-xlarge {
-  padding: $padding-large-vertical $padding-large-horizontal;
-  font-size: $font-size-large;
 }
 
 .label {
@@ -54,11 +47,37 @@ a.badge:focus {
   cursor: pointer;
 }
 
+
+// Large labels
+// ==============================================
+.label-large {
+  padding: 5px 8px;
+}
+
+
+// XL labels
+// ==============================================
+.label-xlarge {
+  padding: $padding-large-vertical $padding-large-horizontal;
+  font-size: $font-size-large;
+}
+
+
+// Info label
+// ==============================================
+.label-info,
+.badge-info {
+  background-color: #3a87ad;
+}
+
 .label-info[href],
 .badge-info[href] {
   background-color: #2d6987;
 }
 
+
+// Inverse label
+// ==============================================
 .label-inverse,
 .badge-inverse {
   background-color: #333333;
@@ -69,11 +88,17 @@ a.badge:focus {
   background-color: #1a1a1a;
 }
 
+
+// Selected label
+// ==============================================
 .label.current {
   margin-bottom: 4px;
   background-color: $brand-primary;
 }
 
+
+// Important label
+// ==============================================
 .label-important,
 .badge-important {
   background-color: #b94a48;
@@ -84,6 +109,9 @@ a.badge:focus {
   background-color: #953b39;
 }
 
+
+// Warning label
+// ==============================================
 .label-warning,
 .badge-warning {
   background-color: #f89406;
@@ -94,6 +122,9 @@ a.badge:focus {
   background-color: #c67605;
 }
 
+
+// Success label
+// ==============================================
 .label-success,
 .badge-success {
   background-color: #468847;
@@ -104,11 +135,9 @@ a.badge:focus {
   background-color: #356635;
 }
 
-.label-info,
-.badge-info {
-  background-color: #3a87ad;
-}
 
+// Facet labels
+// ==============================================
 .label-facets {
   background-color: $gray-lighter;
   text-shadow: none;

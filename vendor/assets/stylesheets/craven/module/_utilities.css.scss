@@ -1,6 +1,9 @@
-/**
- * Contextual emphasis
- */
+//
+// Utilities
+// ==============================================
+
+// Text variations
+// ==============================================
 .text-muted {
   color: $text-muted;
 }
@@ -25,9 +28,9 @@
   color: $state-info-text;
 }
 
-/**
- * Alignment
- */
+
+// Alignment
+// ==============================================
 .text-left {
   text-align: left;
 }
@@ -40,12 +43,11 @@
   text-align: center;
 }
 
+
+// Misc.
+// ==============================================
 .img-caption {
   color: $text-muted;
-}
-
-.hide {
-  display: none;
 }
 
 .sale-price {
@@ -64,11 +66,9 @@
   word-break: break-all;
 }
 
-.unstyled {
-  padding-left: 0;
-  list-style: none;
-}
 
+// Inline lists
+// ==============================================
 .list-inline {
   margin: 0 0 $baseline;
   padding: 0;
@@ -84,23 +84,8 @@
   }
 }
 
-.list-inline-bordered {
-  margin-bottom: $baseline / 2;
-
-  > li {
-    margin: 0 0 0 4px;
-    padding-left: 10px;
-    border-left: 1px solid $hr-border;
-
-    &:first-child {
-      margin-left: 0;
-      padding-left: 0;
-      border-left: 0;
-    }
-  }
-}
-
-
+// Loading state
+// ==============================================
 // Fades image when it's parent class has a class of .loading
 // and adds a loading gif to the background
 .loading {
@@ -128,7 +113,8 @@
 }
 
 
-
+// Hiding content
+// ==============================================
 // Only display content to screen readers
 // See: http://a11yproject.com/posts/how-to-hide-content/
 .sr-only {
@@ -142,18 +128,40 @@
   border: 0;
 }
 
-// Hides all children inside this class
-.hide-children {
-  * {
+.hide {
+  display: none;
+}
+
+.hide-on-mobile {
+  display: none;
+
+  @include respond-min($bp-medium) {
+    display: block;
+  }
+}
+
+.hide-on-tablet {
+
+  @include respond-min($bp-medium) {
+    display: none
+  }
+
+  @include respond-min($bp-large) {
+    display: block;
+  }
+}
+
+.hide-on-desktop {
+  display: block;
+
+  @include respond-min($bp-large) {
     display: none;
   }
 }
 
 
-
-/**
- * Page header
- */
+// Page headers
+// ==============================================
 .page-header {
   text-align: center;
   margin-bottom: ($baseline * 2);
@@ -164,10 +172,8 @@
 }
 
 
-
-/**
- * Strikethrough headings
- */
+// Strikethrough headings
+// ==============================================
 .sectioned {
   position: relative;
   margin-top: $baseline;
@@ -198,6 +204,9 @@
   }
 }
 
+
+// Pullquotes
+// ==============================================
 .pullquote {
   margin: ($baseline * 2) 0;
   font-size: $font-size-large;

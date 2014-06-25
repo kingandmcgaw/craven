@@ -1,6 +1,9 @@
-/**
- * Layout container
- */
+//
+// Grid
+// ==============================================
+
+// Layout container
+// ==============================================
 .l-container {
   position: relative;
   @include outer-container;
@@ -8,10 +11,8 @@
 }
 
 
-
-/**
- * Grid section
- */
+// Grid section
+// ==============================================
 .l-grid {
   @include row;
   margin: 0;
@@ -35,14 +36,11 @@
   }
 }
 
-
-
-/**
- * Mini grid layout
- * 2 columns by default
- * 3 columns at first breakpoint
- * 4 columns at second breakpoint
- */
+// Mini grid
+// ==============================================
+// 2 columns by default
+// 3 columns at first breakpoint
+// 4 columns at second breakpoint
 .l-grid-mini {
 
   .l-grid-item {
@@ -63,14 +61,11 @@
   }
 }
 
-
-
-/**
- * Small grid layout
- * 2 columns by default
- * 3 columns at first breakpoint
- * 6 columns at second breakpoint
- */
+// Small grid
+// ==============================================
+// 2 columns by default
+// 3 columns at first breakpoint
+// 6 columns at second breakpoint
 .l-grid-small {
 
   .l-grid-item {
@@ -91,14 +86,11 @@
   }
 }
 
-
-
-/**
- * Medium grid layout
- * 1 column by default
- * 2 columns at first breakpoint
- * 4 columns at second breakpoint
- */
+// Medium grid
+// ==============================================
+// 1 column by default
+// 2 columns at first breakpoint
+// 4 columns at second breakpoint
 .l-grid-medium {
 
   .l-grid-item {
@@ -116,13 +108,10 @@
   }
 }
 
-
-
-/**
- * Large grid layout
- * 1 column by default
- * 3 columns at second breakpoint
- */
+// Large grid
+// ==============================================
+// 1 column by default
+// 3 columns at second breakpoint
 .l-grid-large {
 
   .l-grid-item {
@@ -134,20 +123,17 @@
   }
 }
 
-
-
-/**
- * Split layout
- * 1 column by default
- * 2 columns at second breakpoint
- *
- * To be used with a wrapper of `.l-grid`:
- *
- *    <div class="l-grid">
- *        <div class="l-split">...</div>
- *        <div class="l-split">...</div>
- *    </div>
- */
+// Split layout
+// ==============================================
+// 1 column by default
+// 2 columns at second breakpoint
+//
+// To be used with a wrapper of `.l-grid`:
+//
+// <div class="l-grid">
+//   <div class="l-split">...</div>
+//   <div class="l-split">...</div>
+// </div>
 .l-split {
 
   @include respond-min($bp-medium) {
@@ -157,10 +143,8 @@
 }
 
 
-
-/**
- * Split layout for narrow columns
- */
+// Split layout for narrow columns
+// ==============================================
 .l-split-small {
 
   @include respond-min($bp-small) {
@@ -178,17 +162,18 @@
   }
 }
 
-
-
-/**
- * Reverse order of columns in split layout
- * e.g. The first column will float right whereas the second columns will float left
- *
- * To be used as an extension to `.l-split`:
- *
- *    <div class="l-split l-split-push">...</div>
- *    <div class="l-split l-split-pull">...</div>
- */
+// Reverse split layout
+// ==============================================
+// Reverse order of columns in split layout
+// e.g. The first column will float right whereas
+// the second columns will float left
+//
+// To be used as an extension to `.l-split`:
+//
+// <div class="l-grid">
+//   <div class="l-split l-split-push">...</div>
+//   <div class="l-split l-split-pull">...</div>
+// </div>
 .l-split-push {
 
   @include respond-min($bp-medium) {
@@ -204,10 +189,8 @@
 }
 
 
-
-/**
- * Features grid
- */
+// Features grid
+// ==============================================
 .l-features-grid {
   @include row;
 }
