@@ -1,26 +1,12 @@
-/**
- * Variables which can be changed to alter the style of the site
- *
- * Contents
- * ====================================
- * 1. Grayscale
- * 2. Brand colours
- * 3. Base styles
- * 4. Lists
- * 5. Links
- * 6. Typography
- * 7. Components
- * 8. Buttons
- * 9. Forms
- * 10. Pagination
- * 11. States
- * 12. Miscellaneous
- * 13. Stacking
- * 14. Popovers
- * 15. Breakpoints
- */
+//
+// Variables
+// ==============================================
 
-// 1. Grayscale
+
+// Colours
+// ==============================================
+
+// Grayscale
 $gray-lighter: #f5f5f5;
 $gray-light: #e5e5e5;
 $gray: #dadada;
@@ -28,7 +14,7 @@ $gray-dark: #8f8f8f;
 $gray-darker: #666;
 $black: #1b1b1b;
 
-// 2. Brand colours
+// Brand colours
 $brand-primary: #1C96B5;
 $brand-warning: #c09853;
 $brand-error: #d14;
@@ -37,40 +23,45 @@ $brand-success: #468847;
 $brand-red: #df1a22;
 $brand-red-dark: #a61217;
 
-// 3. Base styles
+
+// Global styles
+// ==============================================
 $body-bg: #fff;
 $text-color: $black;
 
-// 4. Lists
-$list-indent: 20px;
-$list-indent-nested: $list-indent;
 
-// 5. Links
+// Links
+// ==============================================
 $link-color: $brand-primary;
 $link-color-hover: darken($link-color, 15%);
 $link-text-decoration: none;
 $link-text-decoration-hover: underline;
 
-// 6. Typography
+
+// Typography
+// ==============================================
+
+// Font stacks
 $font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
 $font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
 $font-family-base: $font-family-sans-serif;
 
+// Font sizes and leading
 $font-size-base: 14px;
-$font-size-large: $font-size-base * 1.25;
-$font-size-small: $font-size-base * 0.85;
-
+$font-size-large: 18px;
+$font-size-small: 12px;
 $font-family-lead: $font-family-base;
 $font-size-lead: $font-size-large;
 $font-weight-lead: 200;
 $line-height-lead: 1.4;
-
 $line-height-base: 1.4;
 $baseline: 20px;
 
+// Gives a consistent margin to elements
 $margin-default: 0 0 round($baseline / 2);
 
+// Headings
 $font-size-h1: round($font-size-base * 2.50);
 $font-size-h2: round($font-size-base * 1.5);
 $font-size-h3: round($font-size-base * 1.25);
@@ -96,7 +87,8 @@ $headings-link-color-hover: $headings-link-color;
 $headings-link-text-decoration: none;
 $headings-link-text-decoration-hover: underline;
 
-// 7. Components
+// Padding
+// ==============================================
 $padding-base-vertical: 6px;
 $padding-base-horizontal: 12px;
 
@@ -106,70 +98,16 @@ $padding-large-horizontal: 16px;
 $padding-small-vertical: 5px;
 $padding-small-horizontal: 10px;
 
-$line-height-large: 1.33;
-$line-height-small: 1.5;
 
+// Border radius
+// ==============================================
 $border-radius-base: 4px;
 $border-radius-large: 6px;
 $border-radius-small: 3px;
 
-$component-active-color: #fff;
-$component-active-bg: $brand-primary;
 
-// 8. Buttons
-$btn-font-weight: normal;
-
-$btn-default-color: #333;
-$btn-default-bg: #fff;
-$btn-default-border: darken($btn-default-bg, 5%);
-
-$btn-success-color: #fff;
-$btn-success-bg: $brand-success;
-$btn-success-border: darken($btn-success-bg, 5%);
-
-$btn-warning-color: #fff;
-$btn-warning-bg: $brand-warning;
-$btn-warning-border: darken($btn-warning-bg, 5%);
-
-$btn-info-color: #fff;
-$btn-info-bg: $brand-info;
-$btn-info-border: darken($btn-info-bg, 5%);
-
-$btn-link-disabled-color: $gray-light;
-
-// 9. Forms
-$input-bg: #fff;
-$input-bg-disabled: $gray-lighter;
-
-$input-color: $gray;
-$input-border: #ccc;
-$input-border-radius: $border-radius-base;
-$input-border-focus: #66afe9;
-
-$input-color-placeholder: $gray-light;
-
-$input-height-base: ($baseline + ($padding-base-vertical * 2) + 2);
-$input-height-large: (floor($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2);
-$input-height-small: (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2);
-
-$legend-color: $gray-dark;
-$legend-border-color: #e5e5e5;
-
-$input-group-addon-bg: $gray-lighter;
-$input-group-addon-border-color: $input-border;
-
-// 10. Pagination
-$pagination-bg: #fff;
-$pagination-border: #ddd;
-
-$pagination-hover-bg: $gray-lighter;
-
-$pagination-active-bg: $brand-primary;
-$pagination-active-color: #fff;
-
-$pagination-disabled-color: $gray-light;
-
-// 11. States
+// State colours
+// ==============================================
 $state-warning-text: #c09853;
 $state-warning-bg: #fcf8e3;
 $state-warning-border: darken(adjust-hue($state-warning-bg, -10), 3%);
@@ -186,25 +124,29 @@ $state-info-text: #3a87ad;
 $state-info-bg: #d9edf7;
 $state-info-border: darken(adjust-hue($state-info-bg, -10), 7%);
 
-// 12. Miscellaneous
+
+// Miscellaneous
+// ==============================================
 $keyline-color: #ccc;
 $hr-border: $keyline-color;
 $default-box-shadow: 1px 1px 7px rgba(0,0,0,0.15);
 $text-muted: $gray-dark;
 $headings-small-color: $text-muted;
 
-// 13. Stacking
-$zindex-popover: 1010;
 
-// 14. Popovers
-$popover-padding: $padding-base-vertical $padding-base-horizontal;
+// Popovers
+// ==============================================
+$popover-padding: 6px 12px;
 $popover-border-width: 1px;
 $popover-border-color: $keyline-color;
 $popover-border-radius: $border-radius-base;
 $popover-bg-color: #fff;
 $popover-carat-width: 10px;
+$popover-z-index: 1010;
 
-// 15. Breakpoints
+
+// Breakpoints
+// ==============================================
 $bp-small: 500px;
 $bp-medium: 767px;
 $bp-large: 900px;

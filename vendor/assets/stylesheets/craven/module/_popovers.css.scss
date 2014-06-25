@@ -7,7 +7,7 @@
 // ----------------------------------------------
 .popover {
   position: absolute;
-  z-index: $zindex-popover;
+  z-index: $popover-z-index;
   display: none;
   margin-top: $popover-carat-width;
   margin-right: 10px;

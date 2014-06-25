@@ -145,10 +145,10 @@ ul {
   &.disc,
   &.circle,
   &.square {
-    padding-left: $list-indent;
+    padding-left: 20px;
 
     ul {
-      padding-left: $list-indent-nested;
+      padding-left: 20px;
     }
 
     .unstyled {
