@@ -29,14 +29,6 @@ a.btn:focus {
 }
 
 
-// Large buttons
-// ==============================================
-.btn-large {
-  padding: 7px 10px;
-  font-size: 18px;
-}
-
-
 // Primary buttons
 // ==============================================
 .btn-primary {
@@ -48,6 +40,14 @@ a.btn:focus {
   &:focus {
     color: #fff;
   }
+}
+
+
+// Large buttons
+// ==============================================
+.btn-large {
+  padding: 7px 10px;
+  font-size: 18px;
 }
 
 
