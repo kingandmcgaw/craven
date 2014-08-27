@@ -60,3 +60,26 @@ $lte-ie8: false !default;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-filter-ie: none;
+  @if $opacity != 1 {
+    $opacity-filter-ie: alpha(opacity=#{$opacity * 100});
+  }
+  filter: $opacity-filter-ie; //IE8
+}
+
+@mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+}
