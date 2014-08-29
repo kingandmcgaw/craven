@@ -110,30 +110,46 @@ h1,
 .h1 {
   font-size: $font-size-h1;
   line-height: $line-height-h1;
+  margin-bottom: 12px;
 }
 
 h2,
 .h2 {
   font-size: $font-size-h2;
   line-height: $line-height-h2;
+  margin-bottom: 18px;
+  color: rgb(166, 18, 23);
 }
 
 h3,
 .h3 {
   font-size: $font-size-h3;
   line-height: $line-height-h3;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid $keyline-color;
 }
 
 h4,
 .h4 {
   font-size: $font-size-h4;
   line-height: $line-height-h4;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+
+  &.heading-keyline {
+    border-bottom: 1px solid $keyline-color;
+  }
 }
 
 h5,
 .h5 {
-  font-size: $font-size-h5;
-  line-height: $line-height-h5;
+  // font-size: $font-size-h5;
+  // line-height: $line-height-h5;
+  @extend h4;
+  font-weight: normal;
 }
 
 h6,

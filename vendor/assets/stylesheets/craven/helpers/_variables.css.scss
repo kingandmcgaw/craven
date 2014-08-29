@@ -65,10 +65,10 @@ $baseline: 20px;
 $margin-default: 0 0 round($baseline / 2);
 
 // Headings
-$font-size-h1: round($font-size-base * 2.50);
-$font-size-h2: round($font-size-base * 1.5);
-$font-size-h3: round($font-size-base * 1.25);
-$font-size-h4: round($font-size-base * 1.1);
+$font-size-h1: 35px; //round($font-size-base * 2.50);
+$font-size-h2: 24px; //round($font-size-base * 1.5);
+$font-size-h3: 20px; //round($font-size-base * 1.25);
+$font-size-h4: 14px; //round($font-size-base * 1.1);
 $font-size-h5: $font-size-base;
 $font-size-h6: round($font-size-base * 0.85);
 
