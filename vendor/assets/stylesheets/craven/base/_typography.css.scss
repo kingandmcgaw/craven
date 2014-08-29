@@ -57,7 +57,7 @@ p {
   font-family: $font-family-lead;
   font-size: $font-size-lead;
   // font-weight: $font-weight-lead;
-  // line-height: $line-height-lead;
+  line-height: 1.14;
 }
 
 .feature-text {
@@ -84,7 +84,8 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
-  margin: $headings-margin;
+  margin-bottom: 12px;
+  line-height: 1.15;
 
   a:link,
   a:visited {
@@ -104,44 +105,62 @@ h1, h2, h3, h4, h5, h6,
     color: $headings-small-color;
     white-space: nowrap;
   }
+
+  &.heading-divider {
+    padding-bottom: 6px;
+    border-bottom: 1px solid $keyline-color;
+  }
 }
 
 h1,
 .h1 {
   font-size: $font-size-h1;
-  line-height: $line-height-h1;
-  margin-bottom: 12px;
+  // TODO get rid of these vars
+  // line-height: $line-height-h1;
+
 }
 
 h2,
 .h2 {
   font-size: $font-size-h2;
-  line-height: $line-height-h2;
-  margin-bottom: 18px;
+  // line-height: $line-height-h2;
+  // margin-bottom: 12px;
+  // padding-bottom: 6px;
+
+  // TODO variables for colour
   color: rgb(166, 18, 23);
 }
+
+
+// TODO fix
+a h2, a .h2, h2 a, .h2 a {
+  color: rgb(166, 18, 23);
+}
+
+
 
 h3,
 .h3 {
   font-size: $font-size-h3;
-  line-height: $line-height-h3;
-  margin-bottom: 12px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid $keyline-color;
+  // line-height: $line-height-h3;
+  // margin-bottom: 12px;
+  // padding-bottom: 6px;
+
+  // &.heading-divider {
+    padding-bottom: 6px;
+    border-bottom: 1px solid $keyline-color;
+  // }
+
 }
 
 h4,
 .h4 {
   font-size: $font-size-h4;
-  line-height: $line-height-h4;
+  // line-height: $line-height-h4;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 8px;
-  padding-bottom: 4px;
-
-  &.heading-keyline {
-    border-bottom: 1px solid $keyline-color;
-  }
+  // padding-bottom: 4px;
 }
 
 h5,
@@ -155,7 +174,7 @@ h5,
 h6,
 .h6 {
   font-size: $font-size-h6;
-  line-height: $line-height-h6;
+  // line-height: $line-height-h6;
 }
 
 
