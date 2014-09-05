@@ -172,39 +172,6 @@
 }
 
 
-// Strikethrough headings
-// ==============================================
-// .sectioned {
-//   position: relative;
-//   margin-top: $baseline;
-//   text-align: center;
-//   color: $brand-red-dark;
-
-//   a {
-//     color: $brand-red-dark !important;
-//   }
-
-//   span {
-//     position: relative;
-//     padding: 0 10px;
-//     background: #fff;
-//     z-index: 5;
-//   }
-
-//   &:before {
-//     position: absolute;
-//     top: 50%;
-//     left: 0;
-//     content: "";
-//     display: block;
-//     width: 100%;
-//     height: 1px;
-//     border-top: 1px solid $keyline-color;
-//     z-index: 1;
-//   }
-// }
-
-
 // Pullquotes
 // ==============================================
 .pullquote {
