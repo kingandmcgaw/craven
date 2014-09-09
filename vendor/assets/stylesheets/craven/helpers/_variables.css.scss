@@ -1,7 +1,7 @@
 //
 // Variables
 // ==============================================
-
+$max-width: 63.5em;
 
 // Colours
 // ==============================================
@@ -22,7 +22,6 @@ $brand-info: #3a87ad;
 $brand-success: #468847;
 $brand-red: #df1a22;
 $brand-red-dark: #a61217;
-
 
 // Global styles
 // ==============================================
@@ -51,9 +50,9 @@ $font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
 $font-family-base: $font-family-serif;
 
 // Font sizes and leading
-$font-size-base: 14px;
+$font-size-base: 15px;
 $font-size-large: 20px;
-$font-size-small: 12px;
+$font-size-small: 13px;
 
 $font-family-lead: $font-family-sans-serif;
 $font-size-lead: $font-size-large;
