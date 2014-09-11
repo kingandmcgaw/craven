@@ -177,7 +177,7 @@
   @include row;
   margin-bottom: $baseline;
   padding-top: $baseline / 2;
-  border-bottom: 1px solid $keyline-color;
+  // border-bottom: 1px solid $keyline-color;
 }
 
 .framing-grid-options-list {

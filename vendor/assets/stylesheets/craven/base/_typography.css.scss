@@ -142,7 +142,7 @@ h2,
 
 // TODO fix
 a h2, a .h2, h2 a, .h2 a {
-  color: rgb(166, 18, 23);
+  color: rgb(166, 18, 23) !important;
 }
 
 
@@ -188,6 +188,11 @@ h6,
 
 // Lists
 // ==============================================
+ol {
+  padding: 0 0 0 $baseline;
+  margin-bottom: $baseline;
+}
+
 ul {
   margin: $margin-default;
   padding: 0;
