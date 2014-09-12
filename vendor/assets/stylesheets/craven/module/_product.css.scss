@@ -152,8 +152,8 @@
   margin-bottom: ($baseline / 2);
 
   .price {
+    text-rendering: optimizeLegibility;
     font-size: 2em;
-    font-weight: bold;
     line-height: 1;
   }
 
@@ -259,8 +259,7 @@
 // ==============================================
 .add-to-cart {
   width: 100%;
-  margin-bottom: ($baseline / 2);
-  font-weight: normal;
+  margin-bottom: 6px;
 }
 
 .lead-time-container {

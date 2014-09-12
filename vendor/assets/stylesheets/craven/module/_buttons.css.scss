@@ -13,7 +13,9 @@ input[type="button"] {
   text-align: center;
   line-height: 1.4;
   font-weight: normal;
-  font-size: $font-size-small;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  padding: 4px 18px 3px;
 
   &:hover,
   &:active,
@@ -34,6 +36,7 @@ a.btn:focus {
 .btn-primary {
   @include button($brand-primary);
   font-weight: normal;
+  padding: 4px 18px 3px;
 
   &:hover,
   &:active,
