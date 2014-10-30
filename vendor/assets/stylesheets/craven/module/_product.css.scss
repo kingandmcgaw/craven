@@ -130,22 +130,6 @@
   margin: 0 0 5px 5px;
 }
 
-.product-summary-control {
-  background: $brand-primary;
-  border-radius: $border-radius-base;
-  padding: 3px 5px;
-  margin-left: 0.5em;
-  font-size: $font-size-small;
-  color: #fff;
-  white-space: nowrap;
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: #fff;
-  }
-}
-
 .product-price {
   padding-top: ($baseline / 4);
   margin-bottom: ($baseline / 2);

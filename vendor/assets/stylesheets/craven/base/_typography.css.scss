@@ -228,4 +228,12 @@ ul {
   &.square {
     list-style: square;
   }
+
+  &.inline {
+    @include clearfix;
+
+    li {
+      float: left;
+    }
+  }
 }
