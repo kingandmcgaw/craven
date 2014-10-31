@@ -139,36 +139,13 @@ a.badge:focus {
 // Facet labels
 // ==============================================
 .label-facets {
-  background-color: $gray-lighter;
-  text-shadow: none;
-  font-weight: normal;
-  color: $text-color;
-  border: 1px solid $keyline-color;
-  margin-bottom: 4px;
-
-  a {
-    color: $link-color;
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: $link-color-hover;
-      text-decoration: $link-text-decoration-hover;
-    }
-  }
-}
-
-.label-refine {
   font-family: $font-family-sans-serif;
   border: 1px solid $keyline-color;
   padding-left: 9px;
-  // padding: 2px 0 2px 9px;
-  // margin: 0 1px 5px 0;
+  display: inline-block;
 
   .btn {
-    // margin: -3px -1px -3px 5px;
     margin-left: 9px;
-    // margin: 0 0 0 9px;
     border-top: none;
     border-right: none;
     border-bottom: none;
@@ -176,7 +153,7 @@ a.badge:focus {
 }
 
 ul {
-  &.inline-labels {
+  &.label-inline {
     li {
       margin: 0 5px 5px 0;
     }
