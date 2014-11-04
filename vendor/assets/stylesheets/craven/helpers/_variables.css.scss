@@ -62,12 +62,13 @@ $line-height-base: 1.4;
 $baseline: 20px;
 
 // Gives a consistent margin to elements
-$margin-default: 0 0 $baseline;
+// $margin-default: 0 0 $baseline;
+$margin-default: 0 0 12px;
 
 // Headings
-$font-size-h1: 36px; //round($font-size-base * 2.50);
+$font-size-h1: 34px; //round($font-size-base * 2.50);
 $font-size-h2: 26px; //round($font-size-base * 1.5);
-$font-size-h3: 22px; //round($font-size-base * 1.25);
+$font-size-h3: 20px; //round($font-size-base * 1.25);
 $font-size-h4: 15px; //round($font-size-base * 1.1);
 $font-size-h5: $font-size-base;
 $font-size-h6: round($font-size-base * 0.85);
@@ -80,7 +81,7 @@ $line-height-h5: $line-height-base;
 $line-height-h6: $line-height-base;
 
 $headings-font-family: $font-family-sans-serif;
-$headings-font-weight: 100;
+$headings-font-weight: 500;
 $headings-color: inherit;
 $headings-margin: 0 0 round($baseline / 2);
 
