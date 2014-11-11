@@ -143,6 +143,7 @@ a.badge:focus {
   border: 1px solid $keyline-color;
   padding-left: 9px;
   display: inline-block;
+  white-space: nowrap;
 
   .btn {
     margin-left: 9px;
