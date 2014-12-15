@@ -186,7 +186,6 @@
 }
 
 .framing-suggestions-container {
-  padding-bottom: $baseline / 2;
 
   .framing-studio-header {
     @include respond-min($bp-medium) {
